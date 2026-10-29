@@ -112,3 +112,9 @@ Corps : 900 à 1300 mots. Répondre à la question dès le premier paragraphe. P
 - Devis : `/contact/`
 - Zone d'intervention : `/zone-intervention/`
 - Pages villes : `/electricien/<commune>/` (ex. `/electricien/givors/`, `/electricien/mornant/`, `/electricien/brignais/`, `/electricien/vienne/`, `/electricien/grigny-sur-rhone/`, `/electricien/chasse-sur-rhone/`, `/electricien/rive-de-gier/`)
+
+## Chantiers réalisés (`src/content/chantiers/<dossier>/index.md`)
+
+Seulement des chantiers réels, avec de vraies photos. Modèle : `src/content/chantiers/_MODELE.md`.
+Titre factuel (« Remplacement d'un tableau à fusibles »), 2 à 5 phrases : situation de départ, travaux, résultat.
+Jamais de nom de client, d'adresse précise ni de prix. Les photos ne doivent montrer ni visage ni numéro de rue.

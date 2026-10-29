@@ -4,6 +4,7 @@ import '../styles/global.css';
 import { SITE, telHref } from '../config';
 import { getCollection } from 'astro:content';
 import { communesAvecPage } from '../lib/communes';
+import { chantiersRecents } from '../lib/chantiers';
 
 interface Props {
   title: string;
@@ -18,6 +19,7 @@ const avecMarque = `${title} | ${SITE.brand}`;
 const fullTitle = !brandSuffix || title.includes(SITE.brand) || avecMarque.length > 60 ? title : avecMarque;
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const aDesChantiers = (await chantiersRecents()).length > 0;
 const villesPied = communesAvecPage.filter((c) => c.km <= 12 && c.pop >= 4000).slice(0, 10);
 
 const entreprise = {
@@ -70,6 +72,7 @@ const jsonld = [entreprise, ...schema];
         </a>
         <nav class="nav" aria-label="Navigation principale">
           <a href="/services/">Services</a>
+          {aDesChantiers && <a href="/chantiers/">Chantiers</a>}
           <a href="/zone-intervention/">Zone d'intervention</a>
           <a href="/blog/">Conseils</a>
           <a href="/contact/">Devis</a>

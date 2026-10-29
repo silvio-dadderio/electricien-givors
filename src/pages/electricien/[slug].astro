@@ -4,14 +4,24 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
+import Chantier from '../../components/Chantier.astro';
 import { getCollection } from 'astro:content';
 import { SITE, telHref } from '../../config';
-import { communesAvecPage, voisines, villagesProches, variante, formatPop, type Commune } from '../../lib/communes';
+import { communes, voisines, villagesProches, variante, formatPop, type Commune } from '../../lib/communes';
+import { chantiersRecents, communesAvecChantier } from '../../lib/chantiers';
+import { estProche } from '../../lib/regles.mjs';
 
-export function getStaticPaths() {
-  return communesAvecPage.map((c) => ({ params: { slug: c.slug }, props: { c } }));
+// Une commune a sa page si elle est dans la liste de départ ou si elle a un chantier.
+// Givors n'en a pas : l'accueil porte la recherche « électricien Givors ».
+export async function getStaticPaths() {
+  const avecChantier = await communesAvecChantier();
+  return communes
+    .filter((c) => c.slug !== 'givors' && (c.page || avecChantier.has(c.slug)))
+    .map((c) => ({ params: { slug: c.slug }, props: { c } }));
 }
 const { c } = Astro.props as { c: Commune };
+const chantiers = (await chantiersRecents()).filter((ch) => ch.data.commune === c.slug);
+const indexable = estProche(c) || chantiers.length > 0;
 const estBase = c.slug === 'givors';
 const km = Math.max(1, Math.round(c.km));
 const cp = c.cp.length > 3 ? `${c.cp[0]} à ${c.cp[c.cp.length - 1]}` : c.cp.join(', ');
@@ -97,7 +107,7 @@ const description = estBase
       `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Appelez le ${SITE.phone}.`,
     ].find((t) => t.length <= 160)!;
 ---
-<Base title={title} description={description} schema={[schema]}>
+<Base title={title} description={description} schema={[schema]} noindex={!indexable}>
   <div class="page-head">
     <div class="wrap">
       <Breadcrumbs items={[{ name: "Zone d'intervention", href: '/zone-intervention/' }, { name: `Électricien ${c.nom}` }]} />
@@ -119,6 +129,15 @@ const description = estBase
           {situation}
           {c.epci && <> La commune fait partie de {/^(Communauté|Métropole)/.test(c.epci) ? `la ${c.epci}` : c.epci}.</>}
         </p>
+
+        {chantiers.length > 0 && (
+          <>
+            <h2>Nos chantiers à {c.nom}</h2>
+            <div class="chantiers">
+              {chantiers.map((ch) => <Chantier chantier={ch} lienCommune={false} />)}
+            </div>
+          </>
+        )}
 
         <h2>Nos interventions à {c.nom}</h2>
         <p>{pServices}</p>

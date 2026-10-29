@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Chantier from '../components/Chantier.astro';
+import Cta from '../components/Cta.astro';
+import { chantiersRecents } from '../lib/chantiers';
+import { SITE } from '../config';
+
+const chantiers = await chantiersRecents();
+---
+<Base
+  title="Nos chantiers d'électricité autour de Givors"
+  description={`Chantiers d'électricité réalisés à Givors et dans un rayon de ${SITE.radiusKm} km : dépannages, tableaux, mises aux normes, rénovations. Photos et détails.`}
+  noindex={chantiers.length === 0}
+>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Chantiers' }]} />
+      <h1>Nos chantiers d'électricité</h1>
+      <p class="lead">Quelques interventions réalisées à Givors et dans les communes voisines.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap">
+      {chantiers.length > 0 ? (
+        <div class="chantiers narrow">
+          {chantiers.map((ch) => <Chantier chantier={ch} />)}
+        </div>
+      ) : (
+        <p class="muted">Les premiers chantiers seront publiés ici très bientôt.</p>
+      )}
+      <Cta />
+    </div>
+  </section>
+</Base>

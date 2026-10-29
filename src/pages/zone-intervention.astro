@@ -4,6 +4,10 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Cta from '../components/Cta.astro';
 import { SITE } from '../config';
 import { communes } from '../lib/communes';
+import { communesAvecChantier } from '../lib/chantiers';
+
+const avecChantier = await communesAvecChantier();
+const aUnePage = (c: (typeof communes)[number]) => c.page || avecChantier.has(c.slug);
 
 const tranches = [
   { titre: 'Moins de 10 km de Givors', min: 0, max: 10 },
@@ -33,7 +37,7 @@ const deps = [...new Set(communes.map((c) => `${c.depNom} (${c.dep})`))];
           <h2>{t.titre} ({t.liste.length} communes)</h2>
           <ul class="chips">
             {t.liste.map((c) => (
-              <li>{c.slug === 'givors' ? <a href="/">{c.nom}</a> : c.page ? <a href={`/electricien/${c.slug}/`}>{c.nom}</a> : <span>{c.nom}</span>}</li>
+              <li>{c.slug === 'givors' ? <a href="/">{c.nom}</a> : aUnePage(c) ? <a href={`/electricien/${c.slug}/`}>{c.nom}</a> : <span>{c.nom}</span>}</li>
             ))}
           </ul>
         </>

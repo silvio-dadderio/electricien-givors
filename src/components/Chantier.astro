@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import { render, getEntry, type CollectionEntry } from 'astro:content';
+import { communes } from '../lib/communes';
+import { nomCourt } from '../lib/services';
+
+// unePhoto : pour les grilles de cartes, où plusieurs photos s'empileraient
+interface Props { chantier: CollectionEntry<'chantiers'>; lienCommune?: boolean; unePhoto?: boolean }
+const { chantier, lienCommune = true, unePhoto = false } = Astro.props;
+const photos = unePhoto ? chantier.data.photos.slice(0, 1) : chantier.data.photos;
+const { Content } = await render(chantier);
+const commune = communes.find((c) => c.slug === chantier.data.commune)!;
+const service = chantier.data.service ? await getEntry('services', chantier.data.service) : undefined;
+const lien = commune.slug === 'givors' ? '/' : `/electricien/${commune.slug}/`;
+const date = chantier.data.date.toLocaleDateString('fr-FR', { month: 'long', year: 'numeric' });
+---
+<article class="chantier">
+  {photos.length > 0 && (
+    <div class="chantier-photos">
+      {photos.map((p) => (
+        <Image src={p.src} alt={p.alt} widths={[400, 800]} sizes="(min-width: 760px) 360px, 100vw" />
+      ))}
+    </div>
+  )}
+  <div class="chantier-texte">
+    <h3>{chantier.data.titre}</h3>
+    <p class="meta">
+      {lienCommune ? <a href={lien}>{commune.nom}</a> : commune.nom} · {date}
+      {service && <> · <a href={`/services/${service.id}/`}>{nomCourt(service)}</a></>}
+    </p>
+    <Content />
+  </div>
+</article>

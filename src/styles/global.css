@@ -273,3 +273,12 @@ a.card:hover { border-color: var(--yellow-dark); box-shadow: 0 4px 16px rgba(15,
 
 .prose ul.facts, .prose ul.chips { padding-left: 0; }
 .aside-box h3 { margin-top: 22px; }
+
+/* Chantiers réalisés */
+.chantiers { display: grid; gap: 20px; }
+.chantier { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #fff; }
+.chantier-photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2px; background: var(--line); }
+.chantier-photos img { width: 100%; height: 220px; object-fit: cover; display: block; }
+.chantier-texte { padding: 16px 20px; }
+.chantier-texte h3 { margin: 0 0 4px; }
+.chantier-texte p:last-child { margin-bottom: 0; }

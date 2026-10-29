@@ -9,7 +9,9 @@ Site statique (Astro) optimisé SEO local : Givors et 30 km autour.
 | `src/config.ts` | Domaine, nom, téléphone, mentions légales |
 | `src/content/services/` | 12 pages services (Markdown) |
 | `src/content/blog/` | Articles de conseils (Markdown) |
+| `src/content/chantiers/` | Chantiers réalisés : un dossier par chantier, modèle dans `_MODELE.md` |
 | `src/data/communes.json` | 234 communes à moins de 30 km, `page: true` = page dédiée |
+| `src/lib/regles.mjs` | Quelles pages villes Google voit (moins de 12 km, ou ville de plus de 10 000 habitants à moins de 20 km) |
 | `src/pages/electricien/[slug].astro` | Modèle des pages villes |
 | `CONTENT_GUIDE.md` | Règles de rédaction (à suivre pour tout nouvel article) |
 
@@ -35,3 +37,12 @@ Remplacer `https://www.electricien-givors.fr` dans `astro.config.mjs` et `src/co
 ## Ajouter un article
 
 Créer `src/content/blog/<slug>.md` avec le même frontmatter que les autres, en respectant `CONTENT_GUIDE.md`. Le sitemap, les liens et les données structurées se mettent à jour seuls.
+
+## Ajouter un chantier
+
+1. Créer `src/content/chantiers/<date-commune-travaux>/index.md` en copiant `_MODELE.md`.
+2. Mettre les photos (jpg) dans le même dossier, au moins une, avec une légende (`alt`).
+3. Le chantier apparaît sur la page de sa commune, sur l'accueil, sur `/chantiers/` et sur la page du service.
+4. Une commune qui n'avait pas de page, ou dont la page était hors Google, en obtient une dans Google dès son premier chantier.
+
+Règles : faits réels uniquement, pas de nom de client, pas d'adresse précise, pas de prix.
