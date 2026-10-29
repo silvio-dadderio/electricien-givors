@@ -1,0 +1,16 @@
+---
+import { SITE, telHref } from '../config';
+interface Props { title?: string; text?: string }
+const {
+  title = 'Un problème électrique ou des travaux à prévoir ?',
+  text = `Appelez-nous ou envoyez votre demande : nous vous rappelons pour fixer un rendez-vous. Intervention à ${SITE.center.nom} et dans un rayon de ${SITE.radiusKm} km.`,
+} = Astro.props;
+---
+<aside class="cta">
+  <h2>{title}</h2>
+  <p>{text}</p>
+  <div class="actions">
+    <a class="btn btn-call" href={telHref}>Appeler le {SITE.phone}</a>
+    <a class="btn btn-ghost" href="/contact/">Demander un devis gratuit</a>
+  </div>
+</aside>

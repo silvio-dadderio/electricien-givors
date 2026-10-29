@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Cta from '../components/Cta.astro';
+import { SITE } from '../config';
+import { communes } from '../lib/communes';
+
+const tranches = [
+  { titre: 'Moins de 10 km de Givors', min: 0, max: 10 },
+  { titre: 'De 10 à 20 km', min: 10, max: 20 },
+  { titre: 'De 20 à 30 km', min: 20, max: 30.01 },
+].map((t) => ({ ...t, liste: communes.filter((c) => c.km >= t.min && c.km < t.max).sort((a, b) => a.nom.localeCompare(b.nom, 'fr')) }));
+const deps = [...new Set(communes.map((c) => `${c.depNom} (${c.dep})`))];
+---
+<Base
+  title="Zone d'intervention : Givors et 30 km autour"
+  description={`Électricien à Givors et dans ${communes.length} communes à moins de 30 km : Rhône, Loire, Isère. Trouvez votre commune et appelez le ${SITE.phone}.`}
+>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: "Zone d'intervention" }]} />
+      <h1>Zone d'intervention : Givors et 30 km autour</h1>
+      <p class="lead">
+        Nous intervenons dans {communes.length} communes situées à moins de {SITE.radiusKm} km de Givors, dans les
+        départements suivants : {deps.join(', ')}. Distances à vol d'oiseau.
+      </p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap">
+      {tranches.map((t) => (
+        <>
+          <h2>{t.titre} ({t.liste.length} communes)</h2>
+          <ul class="chips">
+            {t.liste.map((c) => (
+              <li>{c.page ? <a href={`/electricien/${c.slug}/`}>{c.nom}</a> : <span>{c.nom}</span>}</li>
+            ))}
+          </ul>
+        </>
+      ))}
+      <p class="muted">Votre commune n'apparaît pas ? Appelez-nous quand même au {SITE.phone}, nous vous dirons si nous pouvons intervenir.</p>
+      <Cta />
+    </div>
+  </section>
+</Base>

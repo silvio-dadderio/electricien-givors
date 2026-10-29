@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Cta from '../../components/Cta.astro';
+import { getCollection } from 'astro:content';
+
+const articles = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf() || a.data.title.localeCompare(b.data.title));
+---
+<Base
+  title="Conseils électricité : pannes, normes, travaux"
+  description="Disjoncteur qui saute, panne de courant, tableau électrique, diagnostic, normes : nos conseils d'électricien pour comprendre et agir en sécurité."
+>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Conseils' }]} />
+      <h1>Conseils électricité</h1>
+      <p class="lead">Comprendre une panne, savoir quand changer son tableau, préparer des travaux : des réponses simples, sans jargon.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid-3">
+        {articles.map((a) => (
+          <a class="card" href={`/blog/${a.id}/`}>
+            <h2 style="font-size:1.15rem;margin:0 0 6px">{a.data.title}</h2>
+            <p>{a.data.description}</p>
+            <span class="more">Lire l'article</span>
+          </a>
+        ))}
+      </div>
+      <Cta />
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, telHref } from '../config';
+---
+<Base title="Page introuvable" description="Cette page n'existe pas." noindex>
+  <section class="section">
+    <div class="wrap narrow">
+      <h1>Page introuvable</h1>
+      <p>La page demandée n'existe pas ou a été déplacée.</p>
+      <p><a class="btn btn-call" href={telHref}>Appeler le {SITE.phone}</a></p>
+      <p><a href="/">Retour à l'accueil</a> · <a href="/services/">Nos services</a> · <a href="/zone-intervention/">Zone d'intervention</a></p>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,105 @@
+---
+import { nomCourt } from '../lib/services';
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import { SITE, telHref } from '../config';
+import { communes } from '../lib/communes';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const noms = [...communes].sort((a, b) => a.nom.localeCompare(b.nom, 'fr')).map((c) => c.nom);
+---
+<Base
+  title="Demande de devis électricien à Givors et alentours"
+  description={`Demandez votre devis d'électricien à Givors et 30 km autour : dépannage ou travaux. Appelez le ${SITE.phone} ou envoyez votre demande en 1 minute.`}
+>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Devis' }]} />
+      <h1>Demande de devis</h1>
+      <p class="lead">Le plus rapide : appelez le <a href={telHref}><strong>{SITE.phone}</strong></a>. Sinon, décrivez votre besoin ci-dessous, nous vous rappelons.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap layout-aside">
+      <form class="form" id="devis" novalidate>
+        <div class="row">
+          <div>
+            <label for="nom">Nom</label>
+            <input id="nom" name="nom" autocomplete="name" required />
+          </div>
+          <div>
+            <label for="tel">Téléphone</label>
+            <input id="tel" name="tel" type="tel" autocomplete="tel" required />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label for="commune">Commune</label>
+            <input id="commune" name="commune" list="liste-communes" autocomplete="address-level2" required />
+            <datalist id="liste-communes">{noms.map((n) => <option value={n} />)}</datalist>
+          </div>
+          <div>
+            <label for="besoin">Votre besoin</label>
+            <select id="besoin" name="besoin">
+              {services.map((s) => <option>{nomCourt(s)}</option>)}
+              <option>Autre</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <span class="label" style="font-weight:700;color:var(--navy)">Urgence</span>
+          <div class="radios">
+            <label><input type="radio" name="urgence" value="Dépannage urgent" checked /> Dépannage urgent</label>
+            <label><input type="radio" name="urgence" value="Travaux à prévoir" /> Travaux à prévoir</label>
+          </div>
+        </div>
+        <div>
+          <label for="message">Décrivez la situation</label>
+          <textarea id="message" name="message" placeholder="Exemple : le disjoncteur saute dès que je lance le four, maison des années 80."></textarea>
+        </div>
+        <div class="submit">
+          <button class="btn btn-wa" type="submit" data-canal="whatsapp">Envoyer par WhatsApp</button>
+          <button class="btn btn-call" type="submit" data-canal="sms">Envoyer par SMS</button>
+        </div>
+        <small>Votre message s'ouvre dans WhatsApp ou dans vos SMS, prêt à envoyer. Aucune donnée n'est enregistrée sur ce site.</small>
+        <p id="erreur" class="todo" hidden>Merci d'indiquer au moins votre nom, votre téléphone et votre commune.</p>
+      </form>
+      <aside>
+        <div class="aside-box">
+          <h2 style="font-size:1.15rem">Par téléphone</h2>
+          <a class="btn btn-call" href={telHref}>{SITE.phone}</a>
+          <p class="muted" style="margin-top:12px">Pour un dépannage, l'appel reste le plus rapide. Pour des travaux, une photo du tableau électrique nous aide à préparer la visite.</p>
+          <h3>Zone</h3>
+          <p class="muted">Givors et {SITE.radiusKm} km autour. <a href="/zone-intervention/">Voir les communes</a></p>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <script define:vars={{ wa: SITE.whatsapp, tel: SITE.phoneIntl }}>
+    const form = document.getElementById('devis');
+    let canal = 'whatsapp';
+    form.querySelectorAll('button[data-canal]').forEach((b) => b.addEventListener('click', () => (canal = b.dataset.canal)));
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = new FormData(form);
+      if (!f.get('nom') || !f.get('tel') || !f.get('commune')) {
+        document.getElementById('erreur').hidden = false;
+        return;
+      }
+      const texte = [
+        'Demande de devis (site web)',
+        `Nom : ${f.get('nom')}`,
+        `Téléphone : ${f.get('tel')}`,
+        `Commune : ${f.get('commune')}`,
+        `Besoin : ${f.get('besoin')}`,
+        `Urgence : ${f.get('urgence')}`,
+        f.get('message') ? `Message : ${f.get('message')}` : '',
+      ].filter(Boolean).join('\n');
+      const url = canal === 'sms'
+        ? `sms:${tel}?body=${encodeURIComponent(texte)}`
+        : `https://wa.me/${wa}?text=${encodeURIComponent(texte)}`;
+      window.location.href = url;
+    });
+  </script>
+</Base>

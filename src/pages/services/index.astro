@@ -1,0 +1,34 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Cta from '../../components/Cta.astro';
+import { getCollection } from 'astro:content';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+---
+<Base
+  title="Services d'électricité à Givors et alentours"
+  description="Dépannage, tableau électrique, mise aux normes, rénovation, éclairage, chauffage, VMC : tous nos services d'électricien à Givors et 30 km autour."
+>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Services' }]} />
+      <h1>Services d'électricité à Givors et alentours</h1>
+      <p class="lead">Tous les travaux d'un électricien, pour les particuliers, les copropriétés et les professionnels.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid-3">
+        {services.map((s) => (
+          <a class="card" href={`/services/${s.id}/`}>
+            <h2 style="font-size:1.15rem;margin:0 0 6px">{s.data.title}</h2>
+            <p>{s.data.excerpt}</p>
+            <span class="more">En savoir plus</span>
+          </a>
+        ))}
+      </div>
+      <Cta />
+    </div>
+  </section>
+</Base>

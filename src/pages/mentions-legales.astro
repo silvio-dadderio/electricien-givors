@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE } from '../config';
+const L = SITE.legal;
+const val = (x: string) => x || 'à compléter';
+---
+<Base title="Mentions légales" description={`Mentions légales du site ${SITE.brand}.`} noindex>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Mentions légales' }]} />
+      <h1>Mentions légales</h1>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap prose">
+      <h2>Éditeur du site</h2>
+      <p>
+        {L.editeur}<br />
+        SIRET : <span class:list={[{ todo: !L.siret }]}>{val(L.siret)}</span><br />
+        Adresse : <span class:list={[{ todo: !L.adresse }]}>{val(L.adresse)}</span><br />
+        Téléphone : {SITE.phone}<br />
+        E-mail : <span class:list={[{ todo: !L.email }]}>{val(L.email)}</span>
+      </p>
+      <p>Directeur de la publication : Enzo D'Adderio.</p>
+      <h2>Réalisation des travaux</h2>
+      <p>Les interventions et travaux sont réalisés par un artisan électricien partenaire.</p>
+      <h2>Hébergement</h2>
+      <p>
+        <span class:list={[{ todo: !L.hebergeur }]}>{val(L.hebergeur)}</span><br />
+        <span class:list={[{ todo: !L.hebergeurAdresse }]}>{val(L.hebergeurAdresse)}</span>
+      </p>
+      <h2>Propriété intellectuelle</h2>
+      <p>Les textes de ce site sont la propriété de l'éditeur. Toute reproduction sans autorisation est interdite.</p>
+    </div>
+  </section>
+</Base>

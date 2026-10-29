@@ -1,0 +1,129 @@
+---
+import { nomCourt } from '../lib/services';
+import Base from '../layouts/Base.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import { getCollection } from 'astro:content';
+import { SITE, telHref } from '../config';
+import { communesAvecPage } from '../lib/communes';
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const articles = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+const proches = communesAvecPage.filter((c) => c.km <= 15 && c.slug !== 'givors').sort((a, b) => a.km - b.km);
+
+const faq = [
+  {
+    q: 'Dans quelles communes intervenez-vous ?',
+    a: `Nous intervenons à ${SITE.center.nom} et dans un rayon de ${SITE.radiusKm} km : Grigny-sur-Rhône, Chasse-sur-Rhône, Ternay, Mornant, Brignais, Vienne, Rive-de-Gier, Saint-Genis-Laval, Oullins-Pierre-Bénite et les communes voisines. La liste complète est sur la page zone d'intervention.`,
+  },
+  {
+    q: 'Comment obtenir un devis pour des travaux électriques ?',
+    a: `Appelez le ${SITE.phone} ou remplissez le formulaire de demande de devis. Nous vous rappelons pour comprendre votre besoin, puis nous établissons un devis écrit et détaillé avant tout démarrage de travaux.`,
+  },
+  {
+    q: 'Vous intervenez pour les particuliers et les professionnels ?',
+    a: 'Oui. Nous intervenons chez les particuliers (maison, appartement), dans les copropriétés (parties communes) et dans les locaux professionnels : commerces, bureaux, ateliers.',
+  },
+  {
+    q: 'Que faire en attendant l’électricien en cas de panne ?',
+    a: 'Coupez le courant au tableau si vous sentez une odeur de brûlé ou voyez une prise noircie, et ne touchez à rien. Si un disjoncteur a sauté, vous pouvez essayer de le réarmer une fois après avoir débranché les appareils de la pièce. S’il saute de nouveau, appelez-nous.',
+  },
+];
+
+const webpage = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.brand,
+  url: `${SITE.url}/`,
+  inLanguage: 'fr-FR',
+};
+---
+<Base
+  title="Électricien à Givors : dépannage et travaux électriques"
+  description={`Électricien à Givors et 30 km autour : dépannage, tableau électrique, mise aux normes, rénovation. Particuliers et pros. Appelez le ${SITE.phone}.`}
+  schema={[webpage]}
+  brandSuffix={false}
+>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Électricien à Givors et dans un rayon de 30 km</h1>
+      <p class="lead">
+        Panne de courant, disjoncteur qui saute, tableau à remplacer, rénovation complète : un seul numéro pour vos
+        dépannages et vos travaux électriques à Givors, Grigny-sur-Rhône, Mornant, Brignais, Vienne et alentours.
+      </p>
+      <div class="actions">
+        <a class="btn btn-call" href={telHref}>Appeler le {SITE.phone}</a>
+        <a class="btn btn-ghost" href="/contact/">Demander un devis gratuit</a>
+      </div>
+      <ul class="hero-points">
+        <li>Particuliers, copropriétés, professionnels</li>
+        <li>Devis écrit et détaillé avant travaux</li>
+        <li>Un interlocuteur unique</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Nos services d'électricité</h2>
+      <p class="muted">Du petit dépannage à la rénovation complète, pour les logements comme pour les locaux professionnels.</p>
+      <div class="grid grid-3">
+        {services.map((s) => (
+          <a class="card" href={`/services/${s.id}/`}>
+            <h3>{nomCourt(s)}</h3>
+            <p>{s.data.excerpt}</p>
+            <span class="more">En savoir plus</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="wrap">
+      <h2>Comment ça se passe</h2>
+      <ol class="steps">
+        <li><strong>Vous nous appelez</strong>ou vous envoyez votre demande en ligne, avec une photo si vous pouvez.</li>
+        <li><strong>Nous faisons le point</strong>Nous vous rappelons, nous posons les bonnes questions et nous fixons le passage.</li>
+        <li><strong>Diagnostic, devis, travaux</strong>Le devis est écrit et détaillé. Les travaux démarrent seulement après votre accord.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Électricien à Givors et dans les communes voisines</h2>
+      <p>
+        Nous intervenons à Givors ({SITE.center.cp}) et dans {SITE.radiusKm} km autour, dans le Rhône, la Loire et
+        l'Isère. Voici les communes les plus proches :
+      </p>
+      <ul class="chips">
+        {proches.map((c) => <li><a href={`/electricien/${c.slug}/`}>{c.nom}</a></li>)}
+      </ul>
+      <p><a href="/zone-intervention/">Voir toute la zone d'intervention</a></p>
+    </div>
+  </section>
+
+  {articles.length > 0 && (
+    <section class="section section-soft">
+      <div class="wrap">
+        <h2>Conseils électricité</h2>
+        <div class="grid grid-3">
+          {articles.map((a) => (
+            <a class="card" href={`/blog/${a.id}/`}>
+              <h3>{a.data.title}</h3>
+              <p>{a.data.description}</p>
+              <span class="more">Lire l'article</span>
+            </a>
+          ))}
+        </div>
+        <p><a href="/blog/">Tous les conseils</a></p>
+      </div>
+    </section>
+  )}
+
+  <div class="wrap narrow">
+    <Faq items={faq} />
+    <Cta />
+  </div>
+</Base>

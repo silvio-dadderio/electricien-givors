@@ -1,0 +1,69 @@
+---
+import { nomCourt } from '../../lib/services';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import { SITE, telHref } from '../../config';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('blog');
+  return articles.map((a) => ({ params: { slug: a.id }, props: { article: a } }));
+}
+const { article } = Astro.props;
+const { Content } = await render(article);
+const service = article.data.service ? await getEntry('services', article.data.service) : undefined;
+const autres = (await getCollection('blog')).filter((a) => a.id !== article.id).slice(0, 5);
+const dateIso = article.data.date.toISOString().slice(0, 10);
+const dateFr = article.data.date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: article.data.title,
+  description: article.data.description,
+  datePublished: dateIso,
+  dateModified: dateIso,
+  inLanguage: 'fr-FR',
+  mainEntityOfPage: `${SITE.url}/blog/${article.id}/`,
+  author: { '@id': `${SITE.url}/#entreprise` },
+  publisher: { '@id': `${SITE.url}/#entreprise` },
+  image: `${SITE.url}/og-image.png`,
+};
+---
+<Base title={article.data.seoTitle} description={article.data.description} schema={[schema]}>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Conseils', href: '/blog/' }, { name: article.data.title }]} />
+      <h1>{article.data.title}</h1>
+      <p class="meta">Publié le <time datetime={dateIso}>{dateFr}</time></p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap layout-aside">
+      <article class="prose">
+        <Content />
+        <Faq items={article.data.faq} />
+        <Cta />
+      </article>
+      <aside>
+        <div class="aside-box">
+          <h2 style="font-size:1.15rem">Un électricien à Givors et alentours</h2>
+          <a class="btn btn-call" href={telHref}>{SITE.phone}</a>
+          <a class="btn btn-ghost" style="color:var(--navy)" href="/contact/">Demander un devis</a>
+          {service && (
+            <>
+              <h3>Notre service</h3>
+              <ul class="aside-links"><li><a href={`/services/${service.id}/`}>{nomCourt(service)}</a></li></ul>
+            </>
+          )}
+          <h3>Autres conseils</h3>
+          <ul class="aside-links">
+            {autres.map((a) => <li><a href={`/blog/${a.id}/`}>{a.data.title}</a></li>)}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Base>

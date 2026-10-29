@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE } from '../config';
+---
+<Base title="Politique de confidentialité" description={`Politique de confidentialité du site ${SITE.brand}.`} noindex>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Confidentialité' }]} />
+      <h1>Politique de confidentialité</h1>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap prose">
+      <h2>Données collectées par le site</h2>
+      <p>Ce site n'enregistre aucune donnée personnelle et n'utilise ni cookie de suivi ni outil de mesure d'audience.</p>
+      <h2>Formulaire de demande de devis</h2>
+      <p>
+        Le formulaire prépare un message que vous envoyez vous-même par WhatsApp ou par SMS. Les informations
+        (nom, téléphone, commune, description du besoin) servent uniquement à vous rappeler et à établir un devis.
+        Elles ne sont ni revendues ni transmises à des tiers, en dehors de l'artisan qui réalise l'intervention.
+      </p>
+      <h2>Vos droits</h2>
+      <p>Vous pouvez demander l'accès, la rectification ou la suppression de vos données en appelant le {SITE.phone}.</p>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,131 @@
+---
+import { nomCourt } from '../lib/services';
+import '../styles/global.css';
+import { SITE, telHref } from '../config';
+import { getCollection } from 'astro:content';
+import { communesAvecPage } from '../lib/communes';
+
+interface Props {
+  title: string;
+  description: string;
+  schema?: object[];
+  noindex?: boolean;
+  brandSuffix?: boolean;
+}
+const { title, description, schema = [], noindex = false, brandSuffix = true } = Astro.props;
+const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const fullTitle = !brandSuffix || title.includes(SITE.brand) ? title : `${title} | ${SITE.brand}`;
+
+const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
+const villesPied = communesAvecPage.filter((c) => c.km <= 12 && c.pop >= 4000).slice(0, 10);
+
+const entreprise = {
+  '@context': 'https://schema.org',
+  '@type': 'Electrician',
+  '@id': `${SITE.url}/#entreprise`,
+  name: SITE.brand,
+  url: `${SITE.url}/`,
+  telephone: SITE.phoneIntl,
+  image: `${SITE.url}/og-image.png`,
+  areaServed: {
+    '@type': 'GeoCircle',
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: SITE.center.lat, longitude: SITE.center.lon },
+    geoRadius: String(SITE.radiusKm * 1000),
+  },
+  ...(SITE.legal.adresse
+    ? { address: { '@type': 'PostalAddress', streetAddress: SITE.legal.adresse, addressCountry: 'FR' } }
+    : {}),
+};
+const jsonld = [entreprise, ...schema];
+---
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <meta name="theme-color" content="#0f1b2d" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content={SITE.brand} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={`${SITE.url}/og-image.png`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {jsonld.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="logo" href="/" aria-label={`${SITE.brand}, accueil`}>
+          <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffc400" d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+          {SITE.brand}
+        </a>
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="/services/">Services</a>
+          <a href="/zone-intervention/">Zone d'intervention</a>
+          <a href="/blog/">Conseils</a>
+          <a href="/contact/">Devis</a>
+        </nav>
+        <a class="btn btn-call header-call" href={telHref}>
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          {SITE.phone}
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div>
+            <h2>{SITE.brand}</h2>
+            <p>{SITE.baseline}. Particuliers, copropriétés et professionnels.</p>
+            <p><a href={telHref}><strong>{SITE.phone}</strong></a><br /><a href="/contact/">Demander un devis</a></p>
+          </div>
+          <div>
+            <h2>Services</h2>
+            <ul>
+              {services.slice(0, 8).map((s) => <li><a href={`/services/${s.id}/`}>{nomCourt(s)}</a></li>)}
+              <li><a href="/services/">Tous les services</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Communes</h2>
+            <ul>
+              {villesPied.map((c) => <li><a href={`/electricien/${c.slug}/`}>Électricien {c.nom}</a></li>)}
+              <li><a href="/zone-intervention/">Toute la zone</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Infos</h2>
+            <ul>
+              <li><a href="/blog/">Conseils électricité</a></li>
+              <li><a href="/contact/">Contact et devis</a></li>
+              <li><a href="/mentions-legales/">Mentions légales</a></li>
+              <li><a href="/confidentialite/">Confidentialité</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© {new Date().getFullYear()} {SITE.brand}</span>
+          <span>Intervention à {SITE.center.nom} ({SITE.center.cp}) et dans un rayon de {SITE.radiusKm} km</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-bar">
+      <a class="btn btn-call" href={telHref}>Appeler</a>
+      <a class="btn btn-ghost" href="/contact/">Devis</a>
+    </div>
+  </body>
+</html>

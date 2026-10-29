@@ -1,0 +1,3521 @@
+[
+ {
+  "slug": "givors",
+  "nom": "Givors",
+  "cp": [
+   "69700"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 21379,
+  "km": 0,
+  "lat": 45.58131,
+  "lon": 4.75823,
+  "page": true
+ },
+ {
+  "slug": "grigny-sur-rhone",
+  "nom": "Grigny-sur-Rhône",
+  "cp": [
+   "69520"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 10030,
+  "km": 3.8,
+  "lat": 45.60864,
+  "lon": 4.78737,
+  "page": true
+ },
+ {
+  "slug": "echalas",
+  "nom": "Échalas",
+  "cp": [
+   "69700"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 1994,
+  "km": 4.1,
+  "lat": 45.55066,
+  "lon": 4.72988,
+  "page": true
+ },
+ {
+  "slug": "loire-sur-rhone",
+  "nom": "Loire-sur-Rhône",
+  "cp": [
+   "69700"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2746,
+  "km": 4.3,
+  "lat": 45.54659,
+  "lon": 4.78257,
+  "page": true
+ },
+ {
+  "slug": "beauvallon",
+  "nom": "Beauvallon",
+  "cp": [
+   "69700"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 4260,
+  "km": 4.4,
+  "lat": 45.59178,
+  "lon": 4.70357,
+  "page": true
+ },
+ {
+  "slug": "chasse-sur-rhone",
+  "nom": "Chasse-sur-Rhône",
+  "cp": [
+   "38670"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 6588,
+  "km": 4.4,
+  "lat": 45.57963,
+  "lon": 4.81444,
+  "page": true
+ },
+ {
+  "slug": "saint-romain-en-gier",
+  "nom": "Saint-Romain-en-Gier",
+  "cp": [
+   "69700"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 600,
+  "km": 4.5,
+  "lat": 45.56603,
+  "lon": 4.70425,
+  "page": true
+ },
+ {
+  "slug": "ternay",
+  "nom": "Ternay",
+  "cp": [
+   "69360"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Ozon",
+  "pop": 5596,
+  "km": 4.6,
+  "lat": 45.60492,
+  "lon": 4.80699,
+  "page": true
+ },
+ {
+  "slug": "montagny",
+  "nom": "Montagny",
+  "cp": [
+   "69700"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de la Vallée du Garon (CCVG)",
+  "pop": 3218,
+  "km": 4.9,
+  "lat": 45.62497,
+  "lon": 4.74988,
+  "page": true
+ },
+ {
+  "slug": "millery",
+  "nom": "Millery",
+  "cp": [
+   "69390"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de la Vallée du Garon (CCVG)",
+  "pop": 4299,
+  "km": 5.8,
+  "lat": 45.63122,
+  "lon": 4.77836,
+  "page": true
+ },
+ {
+  "slug": "communay",
+  "nom": "Communay",
+  "cp": [
+   "69360"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Ozon",
+  "pop": 4540,
+  "km": 6.5,
+  "lat": 45.59812,
+  "lon": 4.83856,
+  "page": true
+ },
+ {
+  "slug": "taluyers",
+  "nom": "Taluyers",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 2686,
+  "km": 6.7,
+  "lat": 45.63661,
+  "lon": 4.72334,
+  "page": true
+ },
+ {
+  "slug": "dargoire",
+  "nom": "Dargoire",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 524,
+  "km": 6.8,
+  "lat": 45.56297,
+  "lon": 4.67495,
+  "page": true
+ },
+ {
+  "slug": "seyssuel",
+  "nom": "Seyssuel",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2248,
+  "km": 7,
+  "lat": 45.56005,
+  "lon": 4.84324,
+  "page": true
+ },
+ {
+  "slug": "saint-romain-en-gal",
+  "nom": "Saint-Romain-en-Gal",
+  "cp": [
+   "69560"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2001,
+  "km": 7.3,
+  "lat": 45.53582,
+  "lon": 4.82633,
+  "page": true
+ },
+ {
+  "slug": "serezin-du-rhone",
+  "nom": "Sérézin-du-Rhône",
+  "cp": [
+   "69360"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Ozon",
+  "pop": 3133,
+  "km": 7.3,
+  "lat": 45.62783,
+  "lon": 4.8249,
+  "page": true
+ },
+ {
+  "slug": "treves",
+  "nom": "Trèves",
+  "cp": [
+   "69420"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 712,
+  "km": 7.5,
+  "lat": 45.53464,
+  "lon": 4.68892,
+  "page": true
+ },
+ {
+  "slug": "mornant",
+  "nom": "Mornant",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 6282,
+  "km": 7.6,
+  "lat": 45.61627,
+  "lon": 4.6736,
+  "page": true
+ },
+ {
+  "slug": "les-haies",
+  "nom": "Les Haies",
+  "cp": [
+   "69420"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 723,
+  "km": 7.8,
+  "lat": 45.51225,
+  "lon": 4.73801,
+  "page": true
+ },
+ {
+  "slug": "tartaras",
+  "nom": "Tartaras",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 958,
+  "km": 7.9,
+  "lat": 45.55425,
+  "lon": 4.66383,
+  "page": true
+ },
+ {
+  "slug": "charly",
+  "nom": "Charly",
+  "cp": [
+   "69390"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 4811,
+  "km": 8.1,
+  "lat": 45.65086,
+  "lon": 4.79052,
+  "page": true
+ },
+ {
+  "slug": "vernaison",
+  "nom": "Vernaison",
+  "cp": [
+   "69390"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 5210,
+  "km": 8.6,
+  "lat": 45.64949,
+  "lon": 4.80979,
+  "page": true
+ },
+ {
+  "slug": "vourles",
+  "nom": "Vourles",
+  "cp": [
+   "69390"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de la Vallée du Garon (CCVG)",
+  "pop": 3332,
+  "km": 8.6,
+  "lat": 45.65792,
+  "lon": 4.76842,
+  "page": true
+ },
+ {
+  "slug": "saint-laurent-d-agny",
+  "nom": "Saint-Laurent-d'Agny",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 2111,
+  "km": 8.9,
+  "lat": 45.64291,
+  "lon": 4.68427,
+  "page": true
+ },
+ {
+  "slug": "saint-cyr-sur-le-rhone",
+  "nom": "Saint-Cyr-sur-le-Rhône",
+  "cp": [
+   "69560"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 1286,
+  "km": 9.2,
+  "lat": 45.51687,
+  "lon": 4.83176,
+  "page": true
+ },
+ {
+  "slug": "ampuis",
+  "nom": "Ampuis",
+  "cp": [
+   "69420"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2769,
+  "km": 9.3,
+  "lat": 45.50339,
+  "lon": 4.80309,
+  "page": true
+ },
+ {
+  "slug": "orlienas",
+  "nom": "Orliénas",
+  "cp": [
+   "69530"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 2675,
+  "km": 9.4,
+  "lat": 45.66115,
+  "lon": 4.72047,
+  "page": true
+ },
+ {
+  "slug": "simandres",
+  "nom": "Simandres",
+  "cp": [
+   "69360"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Ozon",
+  "pop": 1918,
+  "km": 9.4,
+  "lat": 45.61185,
+  "lon": 4.87098,
+  "page": true
+ },
+ {
+  "slug": "chuzelles",
+  "nom": "Chuzelles",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2366,
+  "km": 9.4,
+  "lat": 45.57562,
+  "lon": 4.87838,
+  "page": true
+ },
+ {
+  "slug": "solaize",
+  "nom": "Solaize",
+  "cp": [
+   "69360"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 3144,
+  "km": 9.5,
+  "lat": 45.64588,
+  "lon": 4.83834,
+  "page": true
+ },
+ {
+  "slug": "sainte-colombe",
+  "nom": "Sainte-Colombe",
+  "cp": [
+   "69560"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2036,
+  "km": 10,
+  "lat": 45.52529,
+  "lon": 4.85831,
+  "page": true
+ },
+ {
+  "slug": "tupin-et-semons",
+  "nom": "Tupin-et-Semons",
+  "cp": [
+   "69420"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 653,
+  "km": 10.1,
+  "lat": 45.49089,
+  "lon": 4.77429,
+  "page": false
+ },
+ {
+  "slug": "chabaniere",
+  "nom": "Chabanière",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 4323,
+  "km": 10.4,
+  "lat": 45.58967,
+  "lon": 4.62571,
+  "page": true
+ },
+ {
+  "slug": "longes",
+  "nom": "Longes",
+  "cp": [
+   "69420"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 938,
+  "km": 10.5,
+  "lat": 45.50428,
+  "lon": 4.67978,
+  "page": false
+ },
+ {
+  "slug": "brignais",
+  "nom": "Brignais",
+  "cp": [
+   "69530"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de la Vallée du Garon (CCVG)",
+  "pop": 12503,
+  "km": 10.7,
+  "lat": 45.67777,
+  "lon": 4.75274,
+  "page": true
+ },
+ {
+  "slug": "saint-symphorien-d-ozon",
+  "nom": "Saint-Symphorien-d'Ozon",
+  "cp": [
+   "69360"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Ozon",
+  "pop": 6186,
+  "km": 11,
+  "lat": 45.64265,
+  "lon": 4.8695,
+  "page": true
+ },
+ {
+  "slug": "saint-joseph",
+  "nom": "Saint-Joseph",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1996,
+  "km": 11.2,
+  "lat": 45.55521,
+  "lon": 4.61939,
+  "page": false
+ },
+ {
+  "slug": "irigny",
+  "nom": "Irigny",
+  "cp": [
+   "69540"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 9034,
+  "km": 11.4,
+  "lat": 45.67488,
+  "lon": 4.81794,
+  "page": true
+ },
+ {
+  "slug": "chaussan",
+  "nom": "Chaussan",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 1218,
+  "km": 11.5,
+  "lat": 45.63727,
+  "lon": 4.63411,
+  "page": false
+ },
+ {
+  "slug": "vienne",
+  "nom": "Vienne",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 31778,
+  "km": 11.7,
+  "lat": 45.52082,
+  "lon": 4.88074,
+  "page": true
+ },
+ {
+  "slug": "soucieu-en-jarrest",
+  "nom": "Soucieu-en-Jarrest",
+  "cp": [
+   "69510"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 4660,
+  "km": 11.8,
+  "lat": 45.67708,
+  "lon": 4.69215,
+  "page": true
+ },
+ {
+  "slug": "condrieu",
+  "nom": "Condrieu",
+  "cp": [
+   "69420"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 3957,
+  "km": 11.9,
+  "lat": 45.4739,
+  "lon": 4.75737,
+  "page": true
+ },
+ {
+  "slug": "la-chapelle-villars",
+  "nom": "La Chapelle-Villars",
+  "cp": [
+   "42410"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 528,
+  "km": 11.9,
+  "lat": 45.47842,
+  "lon": 4.71547,
+  "page": false
+ },
+ {
+  "slug": "villette-de-vienne",
+  "nom": "Villette-de-Vienne",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2025,
+  "km": 12.1,
+  "lat": 45.58943,
+  "lon": 4.91298,
+  "page": true
+ },
+ {
+  "slug": "chateauneuf",
+  "nom": "Châteauneuf",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1724,
+  "km": 12.2,
+  "lat": 45.51474,
+  "lon": 4.63398,
+  "page": false
+ },
+ {
+  "slug": "marennes",
+  "nom": "Marennes",
+  "cp": [
+   "69970"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Ozon",
+  "pop": 1992,
+  "km": 12.5,
+  "lat": 45.62302,
+  "lon": 4.90734,
+  "page": false
+ },
+ {
+  "slug": "saint-genis-laval",
+  "nom": "Saint-Genis-Laval",
+  "cp": [
+   "69230"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 21212,
+  "km": 12.8,
+  "lat": 45.69432,
+  "lon": 4.7894,
+  "page": true
+ },
+ {
+  "slug": "feyzin",
+  "nom": "Feyzin",
+  "cp": [
+   "69320"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 10304,
+  "km": 12.8,
+  "lat": 45.67334,
+  "lon": 4.85801,
+  "page": true
+ },
+ {
+  "slug": "serpaize",
+  "nom": "Serpaize",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2091,
+  "km": 12.8,
+  "lat": 45.55739,
+  "lon": 4.91955,
+  "page": true
+ },
+ {
+  "slug": "reventin-vaugris",
+  "nom": "Reventin-Vaugris",
+  "cp": [
+   "38121"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2035,
+  "km": 13.1,
+  "lat": 45.47954,
+  "lon": 4.84401,
+  "page": true
+ },
+ {
+  "slug": "riverie",
+  "nom": "Riverie",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 293,
+  "km": 13.3,
+  "lat": 45.59817,
+  "lon": 4.58886,
+  "page": false
+ },
+ {
+  "slug": "rive-de-gier",
+  "nom": "Rive-de-Gier",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 15242,
+  "km": 13.3,
+  "lat": 45.52242,
+  "lon": 4.60975,
+  "page": true
+ },
+ {
+  "slug": "saint-martin-la-plaine",
+  "nom": "Saint-Martin-la-Plaine",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 3764,
+  "km": 13.4,
+  "lat": 45.55225,
+  "lon": 4.59119,
+  "page": true
+ },
+ {
+  "slug": "chonas-l-amballan",
+  "nom": "Chonas-l'Amballan",
+  "cp": [
+   "38121"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 1729,
+  "km": 13.4,
+  "lat": 45.46487,
+  "lon": 4.80293,
+  "page": false
+ },
+ {
+  "slug": "verin",
+  "nom": "Vérin",
+  "cp": [
+   "42410"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 666,
+  "km": 13.5,
+  "lat": 45.46038,
+  "lon": 4.74163,
+  "page": false
+ },
+ {
+  "slug": "rontalon",
+  "nom": "Rontalon",
+  "cp": [
+   "69510"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 1170,
+  "km": 13.8,
+  "lat": 45.65713,
+  "lon": 4.61847,
+  "page": false
+ },
+ {
+  "slug": "saint-andre-la-cote",
+  "nom": "Saint-André-la-Côte",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays Mornantais (COPAMO)",
+  "pop": 269,
+  "km": 13.8,
+  "lat": 45.6324,
+  "lon": 4.59694,
+  "page": false
+ },
+ {
+  "slug": "pont-eveque",
+  "nom": "Pont-Évêque",
+  "cp": [
+   "38780"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 6213,
+  "km": 13.9,
+  "lat": 45.53466,
+  "lon": 4.92363,
+  "page": true
+ },
+ {
+  "slug": "chaponost",
+  "nom": "Chaponost",
+  "cp": [
+   "69630"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de la Vallée du Garon (CCVG)",
+  "pop": 9382,
+  "km": 14.2,
+  "lat": 45.70895,
+  "lon": 4.7455,
+  "page": true
+ },
+ {
+  "slug": "les-roches-de-condrieu",
+  "nom": "Les Roches-de-Condrieu",
+  "cp": [
+   "38370"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 2055,
+  "km": 14.2,
+  "lat": 45.45339,
+  "lon": 4.76462,
+  "page": true
+ },
+ {
+  "slug": "sainte-catherine",
+  "nom": "Sainte-Catherine",
+  "cp": [
+   "69440"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 969,
+  "km": 14.6,
+  "lat": 45.60288,
+  "lon": 4.57268,
+  "page": false
+ },
+ {
+  "slug": "chuyer",
+  "nom": "Chuyer",
+  "cp": [
+   "42410"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 759,
+  "km": 14.6,
+  "lat": 45.45566,
+  "lon": 4.70302,
+  "page": false
+ },
+ {
+  "slug": "messimy",
+  "nom": "Messimy",
+  "cp": [
+   "69510"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 3546,
+  "km": 14.7,
+  "lat": 45.69893,
+  "lon": 4.67247,
+  "page": true
+ },
+ {
+  "slug": "oullins-pierre-benite",
+  "nom": "Oullins-Pierre-Bénite",
+  "cp": [
+   "69310",
+   "69600"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 38168,
+  "km": 14.8,
+  "lat": 45.70842,
+  "lon": 4.81519,
+  "page": true
+ },
+ {
+  "slug": "pavezin",
+  "nom": "Pavezin",
+  "cp": [
+   "42410"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 400,
+  "km": 15,
+  "lat": 45.46496,
+  "lon": 4.6607,
+  "page": false
+ },
+ {
+  "slug": "sainte-croix-en-jarez",
+  "nom": "Sainte-Croix-en-Jarez",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 480,
+  "km": 15.1,
+  "lat": 45.47725,
+  "lon": 4.63399,
+  "page": false
+ },
+ {
+  "slug": "corbas",
+  "nom": "Corbas",
+  "cp": [
+   "69960"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 11315,
+  "km": 15.2,
+  "lat": 45.66829,
+  "lon": 4.90864,
+  "page": true
+ },
+ {
+  "slug": "saint-fons",
+  "nom": "Saint-Fons",
+  "cp": [
+   "69190"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 19285,
+  "km": 15.2,
+  "lat": 45.70152,
+  "lon": 4.85063,
+  "page": true
+ },
+ {
+  "slug": "genilac",
+  "nom": "Genilac",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 3839,
+  "km": 15.3,
+  "lat": 45.5347,
+  "lon": 4.57358,
+  "page": true
+ },
+ {
+  "slug": "thurins",
+  "nom": "Thurins",
+  "cp": [
+   "69510"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 3404,
+  "km": 15.4,
+  "lat": 45.68383,
+  "lon": 4.62587,
+  "page": true
+ },
+ {
+  "slug": "saint-michel-sur-rhone",
+  "nom": "Saint-Michel-sur-Rhône",
+  "cp": [
+   "42410"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 888,
+  "km": 15.4,
+  "lat": 45.44387,
+  "lon": 4.73353,
+  "page": false
+ },
+ {
+  "slug": "jardin",
+  "nom": "Jardin",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2178,
+  "km": 15.4,
+  "lat": 45.49282,
+  "lon": 4.91029,
+  "page": true
+ },
+ {
+  "slug": "luzinay",
+  "nom": "Luzinay",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2416,
+  "km": 15.5,
+  "lat": 45.58937,
+  "lon": 4.9568,
+  "page": true
+ },
+ {
+  "slug": "saint-prim",
+  "nom": "Saint-Prim",
+  "cp": [
+   "38370"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1478,
+  "km": 15.5,
+  "lat": 45.44542,
+  "lon": 4.80117,
+  "page": false
+ },
+ {
+  "slug": "chaponnay",
+  "nom": "Chaponnay",
+  "cp": [
+   "69970"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Ozon",
+  "pop": 4548,
+  "km": 15.8,
+  "lat": 45.62831,
+  "lon": 4.95053,
+  "page": true
+ },
+ {
+  "slug": "lorette",
+  "nom": "Lorette",
+  "cp": [
+   "42420"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 4983,
+  "km": 15.8,
+  "lat": 45.51121,
+  "lon": 4.58184,
+  "page": true
+ },
+ {
+  "slug": "brindas",
+  "nom": "Brindas",
+  "cp": [
+   "69126"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 6775,
+  "km": 16,
+  "lat": 45.72046,
+  "lon": 4.70344,
+  "page": true
+ },
+ {
+  "slug": "farnay",
+  "nom": "Farnay",
+  "cp": [
+   "42320"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1355,
+  "km": 16.2,
+  "lat": 45.48472,
+  "lon": 4.60181,
+  "page": false
+ },
+ {
+  "slug": "saint-clair-du-rhone",
+  "nom": "Saint-Clair-du-Rhône",
+  "cp": [
+   "38370"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 3778,
+  "km": 16.3,
+  "lat": 45.43514,
+  "lon": 4.77281,
+  "page": true
+ },
+ {
+  "slug": "venissieux",
+  "nom": "Vénissieux",
+  "cp": [
+   "69200"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 65502,
+  "km": 16.7,
+  "lat": 45.70413,
+  "lon": 4.88134,
+  "page": true
+ },
+ {
+  "slug": "chagnon",
+  "nom": "Chagnon",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 527,
+  "km": 16.7,
+  "lat": 45.53364,
+  "lon": 4.55447,
+  "page": false
+ },
+ {
+  "slug": "les-cotes-d-arey",
+  "nom": "Les Côtes-d'Arey",
+  "cp": [
+   "38138"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2023,
+  "km": 16.8,
+  "lat": 45.45665,
+  "lon": 4.87951,
+  "page": true
+ },
+ {
+  "slug": "saint-romain-en-jarez",
+  "nom": "Saint-Romain-en-Jarez",
+  "cp": [
+   "42800"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1206,
+  "km": 17,
+  "lat": 45.56517,
+  "lon": 4.54164,
+  "page": false
+ },
+ {
+  "slug": "la-mulatiere",
+  "nom": "La Mulatière",
+  "cp": [
+   "69350"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 6534,
+  "km": 17.1,
+  "lat": 45.73038,
+  "lon": 4.81271,
+  "page": true
+ },
+ {
+  "slug": "estrablin",
+  "nom": "Estrablin",
+  "cp": [
+   "38780"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 3677,
+  "km": 17.3,
+  "lat": 45.51344,
+  "lon": 4.95871,
+  "page": true
+ },
+ {
+  "slug": "francheville",
+  "nom": "Francheville",
+  "cp": [
+   "69340"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 15604,
+  "km": 17.4,
+  "lat": 45.73791,
+  "lon": 4.75631,
+  "page": true
+ },
+ {
+  "slug": "sainte-foy-les-lyon",
+  "nom": "Sainte-Foy-lès-Lyon",
+  "cp": [
+   "69110"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 21692,
+  "km": 17.4,
+  "lat": 45.73579,
+  "lon": 4.79362,
+  "page": true
+ },
+ {
+  "slug": "mions",
+  "nom": "Mions",
+  "cp": [
+   "69780"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 13843,
+  "km": 17.5,
+  "lat": 45.66507,
+  "lon": 4.94908,
+  "page": true
+ },
+ {
+  "slug": "la-grand-croix",
+  "nom": "La Grand-Croix",
+  "cp": [
+   "42320"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 4947,
+  "km": 17.7,
+  "lat": 45.50425,
+  "lon": 4.55884,
+  "page": true
+ },
+ {
+  "slug": "saint-martin-en-haut",
+  "nom": "Saint-Martin-en-Haut",
+  "cp": [
+   "69850"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 3942,
+  "km": 17.8,
+  "lat": 45.65791,
+  "lon": 4.55796,
+  "page": true
+ },
+ {
+  "slug": "auberives-sur-vareze",
+  "nom": "Auberives-sur-Varèze",
+  "cp": [
+   "38550"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1501,
+  "km": 17.8,
+  "lat": 45.42692,
+  "lon": 4.81877,
+  "page": false
+ },
+ {
+  "slug": "septeme",
+  "nom": "Septème",
+  "cp": [
+   "38780"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2186,
+  "km": 18.1,
+  "lat": 45.54778,
+  "lon": 4.98538,
+  "page": true
+ },
+ {
+  "slug": "saint-alban-du-rhone",
+  "nom": "Saint-Alban-du-Rhône",
+  "cp": [
+   "38370"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 965,
+  "km": 18.1,
+  "lat": 45.41825,
+  "lon": 4.75458,
+  "page": false
+ },
+ {
+  "slug": "chavanay",
+  "nom": "Chavanay",
+  "cp": [
+   "42410"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 2884,
+  "km": 18.2,
+  "lat": 45.41897,
+  "lon": 4.72823,
+  "page": true
+ },
+ {
+  "slug": "craponne",
+  "nom": "Craponne",
+  "cp": [
+   "69290"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 12084,
+  "km": 18.5,
+  "lat": 45.74584,
+  "lon": 4.72689,
+  "page": true
+ },
+ {
+  "slug": "saint-sorlin-de-vienne",
+  "nom": "Saint-Sorlin-de-Vienne",
+  "cp": [
+   "38200"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 964,
+  "km": 18.5,
+  "lat": 45.47365,
+  "lon": 4.93851,
+  "page": false
+ },
+ {
+  "slug": "cheyssieu",
+  "nom": "Cheyssieu",
+  "cp": [
+   "38550"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1074,
+  "km": 18.5,
+  "lat": 45.42544,
+  "lon": 4.84252,
+  "page": false
+ },
+ {
+  "slug": "saint-paul-en-jarez",
+  "nom": "Saint-Paul-en-Jarez",
+  "cp": [
+   "42740"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 4699,
+  "km": 18.7,
+  "lat": 45.47005,
+  "lon": 4.57887,
+  "page": true
+ },
+ {
+  "slug": "clonas-sur-vareze",
+  "nom": "Clonas-sur-Varèze",
+  "cp": [
+   "38550"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1535,
+  "km": 18.7,
+  "lat": 45.41468,
+  "lon": 4.79256,
+  "page": false
+ },
+ {
+  "slug": "vaugneray",
+  "nom": "Vaugneray",
+  "cp": [
+   "69670"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 6304,
+  "km": 18.8,
+  "lat": 45.72979,
+  "lon": 4.64273,
+  "page": true
+ },
+ {
+  "slug": "yzeron",
+  "nom": "Yzeron",
+  "cp": [
+   "69510"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 995,
+  "km": 19,
+  "lat": 45.70905,
+  "lon": 4.59562,
+  "page": false
+ },
+ {
+  "slug": "cellieu",
+  "nom": "Cellieu",
+  "cp": [
+   "42320"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1731,
+  "km": 19,
+  "lat": 45.52166,
+  "lon": 4.53,
+  "page": false
+ },
+ {
+  "slug": "larajasse",
+  "nom": "Larajasse",
+  "cp": [
+   "69590"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 1804,
+  "km": 19.2,
+  "lat": 45.60801,
+  "lon": 4.51445,
+  "page": false
+ },
+ {
+  "slug": "pelussin",
+  "nom": "Pélussin",
+  "cp": [
+   "42410"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 3727,
+  "km": 19.2,
+  "lat": 45.42276,
+  "lon": 4.65964,
+  "page": true
+ },
+ {
+  "slug": "saint-just-chaleyssin",
+  "nom": "Saint-Just-Chaleyssin",
+  "cp": [
+   "38540"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 2695,
+  "km": 19.2,
+  "lat": 45.58685,
+  "lon": 5.00456,
+  "page": true
+ },
+ {
+  "slug": "grezieu-la-varenne",
+  "nom": "Grézieu-la-Varenne",
+  "cp": [
+   "69290"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 6472,
+  "km": 19.3,
+  "lat": 45.74787,
+  "lon": 4.68994,
+  "page": true
+ },
+ {
+  "slug": "toussieu",
+  "nom": "Toussieu",
+  "cp": [
+   "69780"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de l'Est Lyonnais (CCEL)",
+  "pop": 3177,
+  "km": 19.4,
+  "lat": 45.65745,
+  "lon": 4.98206,
+  "page": true
+ },
+ {
+  "slug": "l-horme",
+  "nom": "L'Horme",
+  "cp": [
+   "42152"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 4806,
+  "km": 19.6,
+  "lat": 45.49168,
+  "lon": 4.5408,
+  "page": true
+ },
+ {
+  "slug": "valfleury",
+  "nom": "Valfleury",
+  "cp": [
+   "42320"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 739,
+  "km": 19.7,
+  "lat": 45.54198,
+  "lon": 4.51182,
+  "page": false
+ },
+ {
+  "slug": "saint-priest",
+  "nom": "Saint-Priest",
+  "cp": [
+   "69800"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 49229,
+  "km": 20,
+  "lat": 45.7017,
+  "lon": 4.94902,
+  "page": true
+ },
+ {
+  "slug": "chalon",
+  "nom": "Chalon",
+  "cp": [
+   "38122"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 176,
+  "km": 20,
+  "lat": 45.45163,
+  "lon": 4.93681,
+  "page": false
+ },
+ {
+  "slug": "saint-genis-les-ollieres",
+  "nom": "Saint-Genis-les-Ollières",
+  "cp": [
+   "69290"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 5439,
+  "km": 20.1,
+  "lat": 45.76116,
+  "lon": 4.72701,
+  "page": false
+ },
+ {
+  "slug": "vernioz",
+  "nom": "Vernioz",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1521,
+  "km": 20.1,
+  "lat": 45.43013,
+  "lon": 4.89954,
+  "page": false
+ },
+ {
+  "slug": "lyon",
+  "nom": "Lyon",
+  "cp": [
+   "69001",
+   "69002",
+   "69003",
+   "69004",
+   "69005",
+   "69006",
+   "69007",
+   "69008",
+   "69009"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 519127,
+  "km": 20.2,
+  "lat": 45.75485,
+  "lon": 4.83638,
+  "page": true
+ },
+ {
+  "slug": "tassin-la-demi-lune",
+  "nom": "Tassin-la-Demi-Lune",
+  "cp": [
+   "69160"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 23200,
+  "km": 20.2,
+  "lat": 45.76292,
+  "lon": 4.75492,
+  "page": true
+ },
+ {
+  "slug": "la-terrasse-sur-dorlay",
+  "nom": "La Terrasse-sur-Dorlay",
+  "cp": [
+   "42740"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 778,
+  "km": 20.4,
+  "lat": 45.44768,
+  "lon": 4.5783,
+  "page": false
+ },
+ {
+  "slug": "saint-pierre-de-chandieu",
+  "nom": "Saint-Pierre-de-Chandieu",
+  "cp": [
+   "69780"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de l'Est Lyonnais (CCEL)",
+  "pop": 4616,
+  "km": 20.7,
+  "lat": 45.64498,
+  "lon": 5.0089,
+  "page": false
+ },
+ {
+  "slug": "bron",
+  "nom": "Bron",
+  "cp": [
+   "69500"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 42982,
+  "km": 20.8,
+  "lat": 45.7345,
+  "lon": 4.91189,
+  "page": true
+ },
+ {
+  "slug": "saint-maurice-l-exil",
+  "nom": "Saint-Maurice-l'Exil",
+  "cp": [
+   "38550"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 6889,
+  "km": 21.1,
+  "lat": 45.39225,
+  "lon": 4.77721,
+  "page": false
+ },
+ {
+  "slug": "valencin",
+  "nom": "Valencin",
+  "cp": [
+   "38540"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 2878,
+  "km": 21.2,
+  "lat": 45.60759,
+  "lon": 5.02793,
+  "page": false
+ },
+ {
+  "slug": "assieu",
+  "nom": "Assieu",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1726,
+  "km": 21.2,
+  "lat": 45.40992,
+  "lon": 4.87786,
+  "page": false
+ },
+ {
+  "slug": "oytier-saint-oblas",
+  "nom": "Oytier-Saint-Oblas",
+  "cp": [
+   "38780"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 1743,
+  "km": 21.3,
+  "lat": 45.56422,
+  "lon": 5.0311,
+  "page": false
+ },
+ {
+  "slug": "duerne",
+  "nom": "Duerne",
+  "cp": [
+   "69850"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 841,
+  "km": 21.4,
+  "lat": 45.68118,
+  "lon": 4.52293,
+  "page": false
+ },
+ {
+  "slug": "marcenod",
+  "nom": "Marcenod",
+  "cp": [
+   "42140"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 698,
+  "km": 21.6,
+  "lat": 45.57283,
+  "lon": 4.48147,
+  "page": false
+ },
+ {
+  "slug": "bessey",
+  "nom": "Bessey",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 465,
+  "km": 21.7,
+  "lat": 45.39061,
+  "lon": 4.7021,
+  "page": false
+ },
+ {
+  "slug": "la-chapelle-sur-coise",
+  "nom": "La Chapelle-sur-Coise",
+  "cp": [
+   "69590"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 565,
+  "km": 21.8,
+  "lat": 45.65022,
+  "lon": 4.49576,
+  "page": false
+ },
+ {
+  "slug": "malleval",
+  "nom": "Malleval",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 648,
+  "km": 21.9,
+  "lat": 45.38561,
+  "lon": 4.72619,
+  "page": false
+ },
+ {
+  "slug": "moidieu-detourbe",
+  "nom": "Moidieu-Détourbe",
+  "cp": [
+   "38440"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 1978,
+  "km": 21.9,
+  "lat": 45.51208,
+  "lon": 5.02163,
+  "page": false
+ },
+ {
+  "slug": "sainte-consorce",
+  "nom": "Sainte-Consorce",
+  "cp": [
+   "69280"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 2154,
+  "km": 22,
+  "lat": 45.77423,
+  "lon": 4.69267,
+  "page": false
+ },
+ {
+  "slug": "eyzin-pinet",
+  "nom": "Eyzin-Pinet",
+  "cp": [
+   "38780"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 2285,
+  "km": 22,
+  "lat": 45.47794,
+  "lon": 4.99854,
+  "page": false
+ },
+ {
+  "slug": "monsteroux-milieu",
+  "nom": "Monsteroux-Milieu",
+  "cp": [
+   "38122"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 768,
+  "km": 22,
+  "lat": 45.43499,
+  "lon": 4.9474,
+  "page": false
+ },
+ {
+  "slug": "charbonnieres-les-bains",
+  "nom": "Charbonnières-les-Bains",
+  "cp": [
+   "69260"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 5383,
+  "km": 22.1,
+  "lat": 45.77995,
+  "lon": 4.74356,
+  "page": false
+ },
+ {
+  "slug": "pollionnay",
+  "nom": "Pollionnay",
+  "cp": [
+   "69290"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Vallons du Lyonnais (CCVL)",
+  "pop": 2958,
+  "km": 22.2,
+  "lat": 45.76829,
+  "lon": 4.65929,
+  "page": false
+ },
+ {
+  "slug": "ecully",
+  "nom": "Écully",
+  "cp": [
+   "69130"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 17944,
+  "km": 22.3,
+  "lat": 45.78182,
+  "lon": 4.77272,
+  "page": true
+ },
+ {
+  "slug": "doizieux",
+  "nom": "Doizieux",
+  "cp": [
+   "42740"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 856,
+  "km": 22.4,
+  "lat": 45.41819,
+  "lon": 4.58934,
+  "page": false
+ },
+ {
+  "slug": "montromant",
+  "nom": "Montromant",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 456,
+  "km": 22.6,
+  "lat": 45.71107,
+  "lon": 4.53485,
+  "page": false
+ },
+ {
+  "slug": "roisey",
+  "nom": "Roisey",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 1014,
+  "km": 22.6,
+  "lat": 45.391,
+  "lon": 4.65689,
+  "page": false
+ },
+ {
+  "slug": "saint-pierre-de-b-uf",
+  "nom": "Saint-Pierre-de-Bœuf",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 1712,
+  "km": 22.7,
+  "lat": 45.37719,
+  "lon": 4.74457,
+  "page": false
+ },
+ {
+  "slug": "coise",
+  "nom": "Coise",
+  "cp": [
+   "69590"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 800,
+  "km": 22.8,
+  "lat": 45.61451,
+  "lon": 4.46931,
+  "page": false
+ },
+ {
+  "slug": "marcy-l-etoile",
+  "nom": "Marcy-l'Étoile",
+  "cp": [
+   "69280"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 3778,
+  "km": 22.9,
+  "lat": 45.78496,
+  "lon": 4.7117,
+  "page": false
+ },
+ {
+  "slug": "courzieu",
+  "nom": "Courzieu",
+  "cp": [
+   "69690"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 1183,
+  "km": 23,
+  "lat": 45.74087,
+  "lon": 4.57053,
+  "page": false
+ },
+ {
+  "slug": "roussillon",
+  "nom": "Roussillon",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 8595,
+  "km": 23,
+  "lat": 45.37878,
+  "lon": 4.81862,
+  "page": false
+ },
+ {
+  "slug": "chatelus",
+  "nom": "Châtelus",
+  "cp": [
+   "42140"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 143,
+  "km": 23.1,
+  "lat": 45.58966,
+  "lon": 4.46191,
+  "page": false
+ },
+ {
+  "slug": "saint-christo-en-jarez",
+  "nom": "Saint-Christo-en-Jarez",
+  "cp": [
+   "42320"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1885,
+  "km": 23.2,
+  "lat": 45.53601,
+  "lon": 4.46721,
+  "page": false
+ },
+ {
+  "slug": "villeurbanne",
+  "nom": "Villeurbanne",
+  "cp": [
+   "69100"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 163684,
+  "km": 23.4,
+  "lat": 45.77087,
+  "lon": 4.88921,
+  "page": true
+ },
+ {
+  "slug": "saint-chamond",
+  "nom": "Saint-Chamond",
+  "cp": [
+   "42400"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 35646,
+  "km": 23.5,
+  "lat": 45.46998,
+  "lon": 4.50205,
+  "page": true
+ },
+ {
+  "slug": "chassieu",
+  "nom": "Chassieu",
+  "cp": [
+   "69680"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 11208,
+  "km": 23.6,
+  "lat": 45.73808,
+  "lon": 4.96228,
+  "page": true
+ },
+ {
+  "slug": "saint-romain-de-surieu",
+  "nom": "Saint-Romain-de-Surieu",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 468,
+  "km": 23.6,
+  "lat": 45.38976,
+  "lon": 4.88936,
+  "page": false
+ },
+ {
+  "slug": "lupe",
+  "nom": "Lupé",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 314,
+  "km": 23.7,
+  "lat": 45.37214,
+  "lon": 4.70039,
+  "page": false
+ },
+ {
+  "slug": "montseveroux",
+  "nom": "Montseveroux",
+  "cp": [
+   "38122"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 999,
+  "km": 23.8,
+  "lat": 45.42977,
+  "lon": 4.9742,
+  "page": false
+ },
+ {
+  "slug": "le-peage-de-roussillon",
+  "nom": "Le Péage-de-Roussillon",
+  "cp": [
+   "38550"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 6718,
+  "km": 23.8,
+  "lat": 45.36843,
+  "lon": 4.78333,
+  "page": false
+ },
+ {
+  "slug": "heyrieux",
+  "nom": "Heyrieux",
+  "cp": [
+   "38540"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 4956,
+  "km": 24,
+  "lat": 45.62819,
+  "lon": 5.05919,
+  "page": false
+ },
+ {
+  "slug": "ville-sous-anjou",
+  "nom": "Ville-sous-Anjou",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1175,
+  "km": 24.1,
+  "lat": 45.37646,
+  "lon": 4.85853,
+  "page": false
+ },
+ {
+  "slug": "saint-bonnet-de-mure",
+  "nom": "Saint-Bonnet-de-Mure",
+  "cp": [
+   "69720"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de l'Est Lyonnais (CCEL)",
+  "pop": 6984,
+  "km": 24.2,
+  "lat": 45.69615,
+  "lon": 5.02226,
+  "page": false
+ },
+ {
+  "slug": "champagne-au-mont-d-or",
+  "nom": "Champagne-au-Mont-d'Or",
+  "cp": [
+   "69410"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 6311,
+  "km": 24.2,
+  "lat": 45.79826,
+  "lon": 4.78669,
+  "page": false
+ },
+ {
+  "slug": "la-chapelle-de-surieu",
+  "nom": "La Chapelle-de-Surieu",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 757,
+  "km": 24.2,
+  "lat": 45.39431,
+  "lon": 4.91631,
+  "page": false
+ },
+ {
+  "slug": "aveize",
+  "nom": "Aveize",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 1110,
+  "km": 24.6,
+  "lat": 45.67942,
+  "lon": 4.47524,
+  "page": false
+ },
+ {
+  "slug": "saint-symphorien-sur-coise",
+  "nom": "Saint-Symphorien-sur-Coise",
+  "cp": [
+   "69590"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 3785,
+  "km": 24.6,
+  "lat": 45.63117,
+  "lon": 4.45013,
+  "page": false
+ },
+ {
+  "slug": "grammond",
+  "nom": "Grammond",
+  "cp": [
+   "42140"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 887,
+  "km": 24.7,
+  "lat": 45.57352,
+  "lon": 4.44129,
+  "page": false
+ },
+ {
+  "slug": "saint-pierre-la-palud",
+  "nom": "Saint-Pierre-la-Palud",
+  "cp": [
+   "69210"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 2616,
+  "km": 24.8,
+  "lat": 45.78125,
+  "lon": 4.6167,
+  "page": false
+ },
+ {
+  "slug": "chevinay",
+  "nom": "Chevinay",
+  "cp": [
+   "69210"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 580,
+  "km": 24.8,
+  "lat": 45.77327,
+  "lon": 4.59643,
+  "page": false
+ },
+ {
+  "slug": "maclas",
+  "nom": "Maclas",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 1868,
+  "km": 25,
+  "lat": 45.36064,
+  "lon": 4.69805,
+  "page": false
+ },
+ {
+  "slug": "caluire-et-cuire",
+  "nom": "Caluire-et-Cuire",
+  "cp": [
+   "69300"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 43597,
+  "km": 25.1,
+  "lat": 45.79752,
+  "lon": 4.85164,
+  "page": true
+ },
+ {
+  "slug": "veranne",
+  "nom": "Véranne",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 951,
+  "km": 25.1,
+  "lat": 45.37217,
+  "lon": 4.63542,
+  "page": false
+ },
+ {
+  "slug": "saint-georges-d-esperanche",
+  "nom": "Saint-Georges-d'Espéranche",
+  "cp": [
+   "38790"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 3545,
+  "km": 25.1,
+  "lat": 45.5596,
+  "lon": 5.07966,
+  "page": false
+ },
+ {
+  "slug": "saint-genis-l-argentiere",
+  "nom": "Saint-Genis-l'Argentière",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 986,
+  "km": 25.2,
+  "lat": 45.71367,
+  "lon": 4.49544,
+  "page": false
+ },
+ {
+  "slug": "pomeys",
+  "nom": "Pomeys",
+  "cp": [
+   "69590"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 1126,
+  "km": 25.4,
+  "lat": 45.64617,
+  "lon": 4.44553,
+  "page": false
+ },
+ {
+  "slug": "savas-mepin",
+  "nom": "Savas-Mépin",
+  "cp": [
+   "38440"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Bièvre Isère",
+  "pop": 883,
+  "km": 25.4,
+  "lat": 45.49697,
+  "lon": 5.06162,
+  "page": false
+ },
+ {
+  "slug": "saint-denis-sur-coise",
+  "nom": "Saint-Denis-sur-Coise",
+  "cp": [
+   "42140"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 692,
+  "km": 25.6,
+  "lat": 45.61132,
+  "lon": 4.4314,
+  "page": false
+ },
+ {
+  "slug": "cour-et-buis",
+  "nom": "Cour-et-Buis",
+  "cp": [
+   "38122"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 920,
+  "km": 25.6,
+  "lat": 45.44048,
+  "lon": 5.01828,
+  "page": false
+ },
+ {
+  "slug": "dardilly",
+  "nom": "Dardilly",
+  "cp": [
+   "69570"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 9221,
+  "km": 25.7,
+  "lat": 45.81216,
+  "lon": 4.74708,
+  "page": false
+ },
+ {
+  "slug": "la-tour-de-salvagny",
+  "nom": "La Tour-de-Salvagny",
+  "cp": [
+   "69890"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 4649,
+  "km": 25.7,
+  "lat": 45.81019,
+  "lon": 4.71245,
+  "page": false
+ },
+ {
+  "slug": "fontanes",
+  "nom": "Fontanès",
+  "cp": [
+   "42140"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 690,
+  "km": 25.8,
+  "lat": 45.54132,
+  "lon": 4.43128,
+  "page": false
+ },
+ {
+  "slug": "diemoz",
+  "nom": "Diémoz",
+  "cp": [
+   "38790"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 2947,
+  "km": 25.8,
+  "lat": 45.58819,
+  "lon": 5.08908,
+  "page": false
+ },
+ {
+  "slug": "genas",
+  "nom": "Genas",
+  "cp": [
+   "69740"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de l'Est Lyonnais (CCEL)",
+  "pop": 13421,
+  "km": 26,
+  "lat": 45.72987,
+  "lon": 5.01611,
+  "page": true
+ },
+ {
+  "slug": "beauvoir-de-marc",
+  "nom": "Beauvoir-de-Marc",
+  "cp": [
+   "38440"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Bièvre Isère",
+  "pop": 1098,
+  "km": 26,
+  "lat": 45.51959,
+  "lon": 5.07999,
+  "page": false
+ },
+ {
+  "slug": "saint-laurent-de-mure",
+  "nom": "Saint-Laurent-de-Mure",
+  "cp": [
+   "69720"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes de l'Est Lyonnais (CCEL)",
+  "pop": 5791,
+  "km": 26.1,
+  "lat": 45.68367,
+  "lon": 5.06095,
+  "page": false
+ },
+ {
+  "slug": "sourcieux-les-mines",
+  "nom": "Sourcieux-les-Mines",
+  "cp": [
+   "69210"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 2100,
+  "km": 26.1,
+  "lat": 45.79824,
+  "lon": 4.6308,
+  "page": false
+ },
+ {
+  "slug": "vaulx-en-velin",
+  "nom": "Vaulx-en-Velin",
+  "cp": [
+   "69120"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 53069,
+  "km": 26.2,
+  "lat": 45.78596,
+  "lon": 4.92664,
+  "page": true
+ },
+ {
+  "slug": "sainte-foy-l-argentiere",
+  "nom": "Sainte-Foy-l'Argentière",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 1312,
+  "km": 26.2,
+  "lat": 45.70495,
+  "lon": 4.47153,
+  "page": false
+ },
+ {
+  "slug": "saint-didier-au-mont-d-or",
+  "nom": "Saint-Didier-au-Mont-d'Or",
+  "cp": [
+   "69370"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 7435,
+  "km": 26.2,
+  "lat": 45.81494,
+  "lon": 4.79799,
+  "page": false
+ },
+ {
+  "slug": "brussieu",
+  "nom": "Brussieu",
+  "cp": [
+   "69690"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 1382,
+  "km": 26.3,
+  "lat": 45.74724,
+  "lon": 4.51773,
+  "page": false
+ },
+ {
+  "slug": "decines-charpieu",
+  "nom": "Décines-Charpieu",
+  "cp": [
+   "69150"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 29877,
+  "km": 26.4,
+  "lat": 45.77197,
+  "lon": 4.96156,
+  "page": true
+ },
+ {
+  "slug": "grenay",
+  "nom": "Grenay",
+  "cp": [
+   "38540"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 1628,
+  "km": 26.4,
+  "lat": 45.66192,
+  "lon": 5.07697,
+  "page": false
+ },
+ {
+  "slug": "lentilly",
+  "nom": "Lentilly",
+  "cp": [
+   "69210"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 6623,
+  "km": 26.6,
+  "lat": 45.8125,
+  "lon": 4.67043,
+  "page": false
+ },
+ {
+  "slug": "sorbiers",
+  "nom": "Sorbiers",
+  "cp": [
+   "42290"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 8116,
+  "km": 26.6,
+  "lat": 45.49943,
+  "lon": 4.43746,
+  "page": false
+ },
+ {
+  "slug": "la-valla-en-gier",
+  "nom": "La Valla-en-Gier",
+  "cp": [
+   "42131"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1140,
+  "km": 26.7,
+  "lat": 45.40535,
+  "lon": 4.52476,
+  "page": false
+ },
+ {
+  "slug": "salaise-sur-sanne",
+  "nom": "Salaise-sur-Sanne",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 4606,
+  "km": 26.7,
+  "lat": 45.34423,
+  "lon": 4.80898,
+  "page": false
+ },
+ {
+  "slug": "saint-cyr-au-mont-d-or",
+  "nom": "Saint-Cyr-au-Mont-d'Or",
+  "cp": [
+   "69450"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 6327,
+  "km": 26.9,
+  "lat": 45.81918,
+  "lon": 4.8183,
+  "page": false
+ },
+ {
+  "slug": "la-gimond",
+  "nom": "La Gimond",
+  "cp": [
+   "42140"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 279,
+  "km": 26.9,
+  "lat": 45.55565,
+  "lon": 4.41446,
+  "page": false
+ },
+ {
+  "slug": "bessenay",
+  "nom": "Bessenay",
+  "cp": [
+   "69690"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 2331,
+  "km": 27,
+  "lat": 45.77424,
+  "lon": 4.547,
+  "page": false
+ },
+ {
+  "slug": "meyssiez",
+  "nom": "Meyssiez",
+  "cp": [
+   "38440"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Vienne Condrieu",
+  "pop": 671,
+  "km": 27.1,
+  "lat": 45.46245,
+  "lon": 5.06177,
+  "page": false
+ },
+ {
+  "slug": "bellegarde-poussieu",
+  "nom": "Bellegarde-Poussieu",
+  "cp": [
+   "38270"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1007,
+  "km": 27.2,
+  "lat": 45.3777,
+  "lon": 4.95091,
+  "page": false
+ },
+ {
+  "slug": "chevrieres",
+  "nom": "Chevrières",
+  "cp": [
+   "42140"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 1150,
+  "km": 27.3,
+  "lat": 45.59064,
+  "lon": 4.40812,
+  "page": false
+ },
+ {
+  "slug": "souzy",
+  "nom": "Souzy",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 763,
+  "km": 27.5,
+  "lat": 45.70398,
+  "lon": 4.4511,
+  "page": false
+ },
+ {
+  "slug": "collonges-au-mont-d-or",
+  "nom": "Collonges-au-Mont-d'Or",
+  "cp": [
+   "69660"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 4669,
+  "km": 27.6,
+  "lat": 45.822,
+  "lon": 4.84265,
+  "page": false
+ },
+ {
+  "slug": "saint-appolinard",
+  "nom": "Saint-Appolinard",
+  "cp": [
+   "42520"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes du Pilat Rhodanien",
+  "pop": 704,
+  "km": 27.6,
+  "lat": 45.34577,
+  "lon": 4.64708,
+  "page": false
+ },
+ {
+  "slug": "anjou",
+  "nom": "Anjou",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1031,
+  "km": 27.6,
+  "lat": 45.3491,
+  "lon": 4.88287,
+  "page": false
+ },
+ {
+  "slug": "grezieu-le-marche",
+  "nom": "Grézieu-le-Marché",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 834,
+  "km": 27.7,
+  "lat": 45.6622,
+  "lon": 4.42084,
+  "page": false
+ },
+ {
+  "slug": "moissieu-sur-dolon",
+  "nom": "Moissieu-sur-Dolon",
+  "cp": [
+   "38270"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 747,
+  "km": 27.7,
+  "lat": 45.39087,
+  "lon": 4.98649,
+  "page": false
+ },
+ {
+  "slug": "limonest",
+  "nom": "Limonest",
+  "cp": [
+   "69760"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 4012,
+  "km": 27.8,
+  "lat": 45.83095,
+  "lon": 4.77124,
+  "page": false
+ },
+ {
+  "slug": "saint-jean-bonnefonds",
+  "nom": "Saint-Jean-Bonnefonds",
+  "cp": [
+   "42650"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 6563,
+  "km": 27.8,
+  "lat": 45.45691,
+  "lon": 4.44873,
+  "page": false
+ },
+ {
+  "slug": "bonnefamille",
+  "nom": "Bonnefamille",
+  "cp": [
+   "38090"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 1114,
+  "km": 27.8,
+  "lat": 45.60108,
+  "lon": 5.1141,
+  "page": false
+ },
+ {
+  "slug": "sonnay",
+  "nom": "Sonnay",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1234,
+  "km": 27.9,
+  "lat": 45.35662,
+  "lon": 4.91626,
+  "page": false
+ },
+ {
+  "slug": "saint-quentin-fallavier",
+  "nom": "Saint-Quentin-Fallavier",
+  "cp": [
+   "38070"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté d'agglomération Porte de l'Isère (CAPI)",
+  "pop": 6189,
+  "km": 28,
+  "lat": 45.63971,
+  "lon": 5.10841,
+  "page": false
+ },
+ {
+  "slug": "royas",
+  "nom": "Royas",
+  "cp": [
+   "38440"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Bièvre Isère",
+  "pop": 427,
+  "km": 28,
+  "lat": 45.50513,
+  "lon": 5.10141,
+  "page": false
+ },
+ {
+  "slug": "charantonnay",
+  "nom": "Charantonnay",
+  "cp": [
+   "38790"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Collines Isère Nord Communauté",
+  "pop": 2019,
+  "km": 28.2,
+  "lat": 45.53851,
+  "lon": 5.11581,
+  "page": false
+ },
+ {
+  "slug": "colombier",
+  "nom": "Colombier",
+  "cp": [
+   "42220"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes des Monts du Pilat",
+  "pop": 294,
+  "km": 28.4,
+  "lat": 45.35368,
+  "lon": 4.59398,
+  "page": false
+ },
+ {
+  "slug": "agnin",
+  "nom": "Agnin",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 1245,
+  "km": 28.4,
+  "lat": 45.33624,
+  "lon": 4.86014,
+  "page": false
+ },
+ {
+  "slug": "fontaines-sur-saone",
+  "nom": "Fontaines-sur-Saône",
+  "cp": [
+   "69270"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 6957,
+  "km": 28.5,
+  "lat": 45.82842,
+  "lon": 4.85637,
+  "page": false
+ },
+ {
+  "slug": "sain-bel",
+  "nom": "Sain-Bel",
+  "cp": [
+   "69210"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 2566,
+  "km": 28.5,
+  "lat": 45.8118,
+  "lon": 4.5985,
+  "page": false
+ },
+ {
+  "slug": "dommartin",
+  "nom": "Dommartin",
+  "cp": [
+   "69380"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 2687,
+  "km": 28.5,
+  "lat": 45.83555,
+  "lon": 4.71496,
+  "page": false
+ },
+ {
+  "slug": "la-talaudiere",
+  "nom": "La Talaudière",
+  "cp": [
+   "42350"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 7133,
+  "km": 28.5,
+  "lat": 45.47856,
+  "lon": 4.42355,
+  "page": false
+ },
+ {
+  "slug": "saint-laurent-de-chamousset",
+  "nom": "Saint-Laurent-de-Chamousset",
+  "cp": [
+   "69930"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 2017,
+  "km": 28.7,
+  "lat": 45.73781,
+  "lon": 4.46466,
+  "page": false
+ },
+ {
+  "slug": "rillieux-la-pape",
+  "nom": "Rillieux-la-Pape",
+  "cp": [
+   "69140"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 31389,
+  "km": 28.7,
+  "lat": 45.82046,
+  "lon": 4.89891,
+  "page": true
+ },
+ {
+  "slug": "saint-romain-au-mont-d-or",
+  "nom": "Saint-Romain-au-Mont-d'Or",
+  "cp": [
+   "69270"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 1247,
+  "km": 28.7,
+  "lat": 45.83556,
+  "lon": 4.82021,
+  "page": false
+ },
+ {
+  "slug": "sathonay-camp",
+  "nom": "Sathonay-Camp",
+  "cp": [
+   "69580"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 7019,
+  "km": 28.7,
+  "lat": 45.82586,
+  "lon": 4.87481,
+  "page": false
+ },
+ {
+  "slug": "primarette",
+  "nom": "Primarette",
+  "cp": [
+   "38270"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 686,
+  "km": 28.8,
+  "lat": 45.40807,
+  "lon": 5.03368,
+  "page": false
+ },
+ {
+  "slug": "brullioles",
+  "nom": "Brullioles",
+  "cp": [
+   "69690"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 821,
+  "km": 28.9,
+  "lat": 45.76335,
+  "lon": 4.49268,
+  "page": false
+ },
+ {
+  "slug": "bibost",
+  "nom": "Bibost",
+  "cp": [
+   "69690"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 538,
+  "km": 29,
+  "lat": 45.79666,
+  "lon": 4.54877,
+  "page": false
+ },
+ {
+  "slug": "eveux",
+  "nom": "Éveux",
+  "cp": [
+   "69210"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 1160,
+  "km": 29,
+  "lat": 45.82453,
+  "lon": 4.62202,
+  "page": false
+ },
+ {
+  "slug": "graix",
+  "nom": "Graix",
+  "cp": [
+   "42220"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes des Monts du Pilat",
+  "pop": 128,
+  "km": 29,
+  "lat": 45.36055,
+  "lon": 4.56058,
+  "page": false
+ },
+ {
+  "slug": "sablons",
+  "nom": "Sablons",
+  "cp": [
+   "38550"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 2346,
+  "km": 29,
+  "lat": 45.32156,
+  "lon": 4.78467,
+  "page": false
+ },
+ {
+  "slug": "meyzieu",
+  "nom": "Meyzieu",
+  "cp": [
+   "69330"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 36687,
+  "km": 29.1,
+  "lat": 45.77712,
+  "lon": 5.00623,
+  "page": true
+ },
+ {
+  "slug": "les-halles",
+  "nom": "Les Halles",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 472,
+  "km": 29.3,
+  "lat": 45.71595,
+  "lon": 4.43494,
+  "page": false
+ },
+ {
+  "slug": "aveizieux",
+  "nom": "Aveizieux",
+  "cp": [
+   "42330"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes de Forez-Est",
+  "pop": 1701,
+  "km": 29.6,
+  "lat": 45.56909,
+  "lon": 4.37894,
+  "page": false
+ },
+ {
+  "slug": "neyron",
+  "nom": "Neyron",
+  "cp": [
+   "01700"
+  ],
+  "dep": "01",
+  "depNom": "Ain",
+  "epci": "Communauté de communes de Miribel et du Plateau",
+  "pop": 2421,
+  "km": 29.6,
+  "lat": 45.81868,
+  "lon": 4.93089,
+  "page": false
+ },
+ {
+  "slug": "rochetaillee-sur-saone",
+  "nom": "Rochetaillée-sur-Saône",
+  "cp": [
+   "69270"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Métropole de Lyon",
+  "pop": 1551,
+  "km": 29.8,
+  "lat": 45.84366,
+  "lon": 4.83876,
+  "page": false
+ },
+ {
+  "slug": "le-bessat",
+  "nom": "Le Bessat",
+  "cp": [
+   "42660"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Communauté de communes des Monts du Pilat",
+  "pop": 530,
+  "km": 29.8,
+  "lat": 45.3744,
+  "lon": 4.51515,
+  "page": false
+ },
+ {
+  "slug": "fleurieux-sur-l-arbresle",
+  "nom": "Fleurieux-sur-l'Arbresle",
+  "cp": [
+   "69210"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes du Pays de l'Arbresle (CCPA)",
+  "pop": 2361,
+  "km": 29.9,
+  "lat": 45.83946,
+  "lon": 4.65232,
+  "page": false
+ },
+ {
+  "slug": "saint-heand",
+  "nom": "Saint-Héand",
+  "cp": [
+   "42570"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 3665,
+  "km": 29.9,
+  "lat": 45.53082,
+  "lon": 4.38125,
+  "page": false
+ },
+ {
+  "slug": "la-tour-en-jarez",
+  "nom": "La Tour-en-Jarez",
+  "cp": [
+   "42580"
+  ],
+  "dep": "42",
+  "depNom": "Loire",
+  "epci": "Saint-Étienne Métropole",
+  "pop": 1495,
+  "km": 29.9,
+  "lat": 45.48859,
+  "lon": 4.39796,
+  "page": false
+ },
+ {
+  "slug": "chanas",
+  "nom": "Chanas",
+  "cp": [
+   "38150"
+  ],
+  "dep": "38",
+  "depNom": "Isère",
+  "epci": "Communauté de communes Entre Bièvre et Rhône",
+  "pop": 2706,
+  "km": 29.9,
+  "lat": 45.31755,
+  "lon": 4.83138,
+  "page": false
+ },
+ {
+  "slug": "meys",
+  "nom": "Meys",
+  "cp": [
+   "69610"
+  ],
+  "dep": "69",
+  "depNom": "Rhône",
+  "epci": "Communauté de communes des Monts du Lyonnais",
+  "pop": 861,
+  "km": 30,
+  "lat": 45.68203,
+  "lon": 4.40043,
+  "page": false
+ }
+]

@@ -1,0 +1,73 @@
+---
+import { nomCourt } from '../../lib/services';
+import Base from '../../layouts/Base.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import Faq from '../../components/Faq.astro';
+import Cta from '../../components/Cta.astro';
+import { getCollection, render } from 'astro:content';
+import { SITE, telHref } from '../../config';
+import { communesAvecPage } from '../../lib/communes';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map((s) => ({ params: { slug: s.id }, props: { service: s } }));
+}
+const { service } = Astro.props;
+const { Content } = await render(service);
+const autres = (await getCollection('services')).filter((s) => s.id !== service.id).sort((a, b) => a.data.order - b.data.order);
+const articles = (await getCollection('blog')).filter((a) => a.data.service === service.id);
+const villes = communesAvecPage.filter((c) => c.km <= 12 && c.pop >= 3000).sort((a, b) => a.km - b.km);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: service.data.title,
+  description: service.data.description,
+  serviceType: nomCourt(service),
+  provider: { '@id': `${SITE.url}/#entreprise` },
+  areaServed: { '@type': 'City', name: SITE.center.nom },
+  url: `${SITE.url}/services/${service.id}/`,
+};
+---
+<Base title={service.data.seoTitle} description={service.data.description} schema={[schema]}>
+  <div class="page-head">
+    <div class="wrap">
+      <Breadcrumbs items={[{ name: 'Services', href: '/services/' }, { name: nomCourt(service) }]} />
+      <h1>{service.data.title}</h1>
+      <p class="lead">{service.data.excerpt}</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="wrap layout-aside">
+      <article class="prose">
+        <Content />
+        <Faq items={service.data.faq} />
+        <Cta />
+        <h2>Ce service près de chez vous</h2>
+        <ul class="chips">
+          {villes.map((c) => <li><a href={`/electricien/${c.slug}/`}>{c.nom}</a></li>)}
+        </ul>
+      </article>
+      <aside>
+        <div class="aside-box">
+          <h2 style="font-size:1.15rem">Besoin d'un électricien ?</h2>
+          <p class="muted">Givors et {SITE.radiusKm} km autour.</p>
+          <a class="btn btn-call" href={telHref}>{SITE.phone}</a>
+          <a class="btn btn-ghost" style="color:var(--navy)" href="/contact/">Demander un devis</a>
+          {articles.length > 0 && (
+            <>
+              <h3>À lire</h3>
+              <ul class="aside-links">
+                {articles.map((a) => <li><a href={`/blog/${a.id}/`}>{a.data.title}</a></li>)}
+              </ul>
+            </>
+          )}
+          <h3>Autres services</h3>
+          <ul class="aside-links">
+            {autres.slice(0, 6).map((s) => <li><a href={`/services/${s.id}/`}>{nomCourt(s)}</a></li>)}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+</Base>
