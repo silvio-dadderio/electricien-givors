@@ -14,7 +14,8 @@ interface Props {
 }
 const { title, description, schema = [], noindex = false, brandSuffix = true } = Astro.props;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
-const fullTitle = !brandSuffix || title.includes(SITE.brand) ? title : `${title} | ${SITE.brand}`;
+const avecMarque = `${title} | ${SITE.brand}`;
+const fullTitle = !brandSuffix || title.includes(SITE.brand) || avecMarque.length > 60 ? title : avecMarque;
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 const villesPied = communesAvecPage.filter((c) => c.km <= 12 && c.pop >= 4000).slice(0, 10);

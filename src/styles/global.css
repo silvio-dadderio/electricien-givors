@@ -7,7 +7,7 @@
   --muted: #5b6475;
   --line: #e3e7ee;
   --bg-soft: #f5f7fa;
-  --green: #1f9d55;
+  --green: #16803f;
   --radius: 10px;
   --max: 1120px;
 }
@@ -89,7 +89,7 @@ h3 { font-size: 1.15rem; margin: 1.4em 0 .4em; }
 .btn-ghost { border-color: currentColor; color: inherit; background: transparent; }
 .btn-ghost:hover { color: inherit; opacity: .85; }
 .btn-wa { background: var(--green); color: #fff; }
-.btn-wa:hover { background: #17834a; color: #fff; }
+.btn-wa:hover { background: #11692f; color: #fff; }
 .header-call { padding: 9px 14px; font-size: .95rem; white-space: nowrap; }
 @media (max-width: 420px) {
   .logo { font-size: 1rem; gap: 6px; }

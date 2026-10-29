@@ -5,6 +5,8 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://www.electricien-givors.fr',
   trailingSlash: 'always',
-  integrations: [sitemap({ filter: (page) => !page.includes('/404') })],
+  integrations: [
+    sitemap({ filter: (page) => !/\/(404|mentions-legales|confidentialite)\//.test(page) }),
+  ],
   build: { inlineStylesheets: 'always' },
 });

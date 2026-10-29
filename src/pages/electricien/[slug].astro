@@ -85,12 +85,19 @@ const schema = {
   url: `${SITE.url}/electricien/${c.slug}/`,
 };
 
-const title = `Électricien ${c.nom} (${cp1}) : dépannage et travaux`;
+const title = [
+  `Électricien ${c.nom} (${cp1}) : dépannage et travaux`,
+  `Électricien ${c.nom} (${cp1}) : dépannage`,
+  `Électricien à ${c.nom} (${cp1})`,
+].find((t) => t.length <= 60) ?? `Électricien à ${c.nom}`;
 const description = estBase
   ? `Électricien à Givors (69700) : dépannage, tableau électrique, mise aux normes, rénovation. Particuliers et professionnels. Appelez le ${SITE.phone}.`
-  : `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Intervention depuis Givors. Appelez le ${SITE.phone}.`;
+  : [
+      `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Intervention depuis Givors. Appelez le ${SITE.phone}.`,
+      `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Appelez le ${SITE.phone}.`,
+    ].find((t) => t.length <= 160)!;
 ---
-<Base title={title} description={description} schema={[schema]} brandSuffix={title.length < 45}>
+<Base title={title} description={description} schema={[schema]}>
   <div class="page-head">
     <div class="wrap">
       <Breadcrumbs items={[{ name: "Zone d'intervention", href: '/zone-intervention/' }, { name: `Électricien ${c.nom}` }]} />
