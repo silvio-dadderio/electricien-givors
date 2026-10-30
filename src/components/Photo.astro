@@ -1,0 +1,19 @@
+---
+import { Image } from 'astro:assets';
+import type { Photo } from '../lib/photos';
+
+interface Props { photo?: Photo; prioritaire?: boolean; class?: string }
+const { photo, prioritaire = false, class: classe } = Astro.props;
+---
+{photo && (
+  <figure class:list={['photo', classe]}>
+    <Image
+      src={photo.src}
+      alt={photo.alt}
+      widths={[480, 800, 1200]}
+      sizes="(min-width: 960px) 760px, 100vw"
+      loading={prioritaire ? 'eager' : 'lazy'}
+      fetchpriority={prioritaire ? 'high' : 'auto'}
+    />
+  </figure>
+)}

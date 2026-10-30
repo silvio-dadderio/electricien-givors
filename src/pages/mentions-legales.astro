@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { SITE } from '../config';
+import { credits } from '../lib/photos';
 const L = SITE.legal;
 const val = (x: string) => x || 'à compléter';
 ---
@@ -30,6 +31,15 @@ const val = (x: string) => x || 'à compléter';
         <span class:list={[{ todo: !L.hebergeur }]}>{val(L.hebergeur)}</span><br />
         <span class:list={[{ todo: !L.hebergeurAdresse }]}>{val(L.hebergeurAdresse)}</span>
       </p>
+      {credits.length > 0 && (
+        <>
+          <h2>Crédits photos</h2>
+          <p>Photos d'illustration libres de droit. Elles ne représentent pas des chantiers réalisés par nos soins.</p>
+          <ul>
+            {credits.map((p) => <li><a href={p.source} rel="nofollow noopener">{p.auteur}</a> ({p.licence})</li>)}
+          </ul>
+        </>
+      )}
       <h2>Propriété intellectuelle</h2>
       <p>Les textes de ce site sont la propriété de l'éditeur. Toute reproduction sans autorisation est interdite.</p>
     </div>

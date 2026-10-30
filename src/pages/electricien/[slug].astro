@@ -5,6 +5,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import Chantier from '../../components/Chantier.astro';
+import Photo from '../../components/Photo.astro';
+import { photosServices } from '../../lib/photos';
 import { getCollection } from 'astro:content';
 import { SITE, telHref } from '../../config';
 import { communes, voisines, villagesProches, variante, formatPop, type Commune } from '../../lib/communes';
@@ -22,6 +24,7 @@ export async function getStaticPaths() {
 const { c } = Astro.props as { c: Commune };
 const chantiers = (await chantiersRecents()).filter((ch) => ch.data.commune === c.slug);
 const indexable = estProche(c) || chantiers.length > 0;
+const illustration = photosServices.length ? variante(c.slug + 'photo', photosServices) : undefined;
 const estBase = c.slug === 'givors';
 const km = Math.max(1, Math.round(c.km));
 const cp = c.cp.length > 3 ? `${c.cp[0]} à ${c.cp[c.cp.length - 1]}` : c.cp.join(', ');
@@ -138,6 +141,8 @@ const description = estBase
             </div>
           </>
         )}
+
+        <Photo photo={illustration} />
 
         <h2>Nos interventions à {c.nom}</h2>
         <p>{pServices}</p>

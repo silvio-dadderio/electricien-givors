@@ -282,3 +282,10 @@ a.card:hover { border-color: var(--yellow-dark); box-shadow: 0 4px 16px rgba(15,
 .chantier-texte { padding: 16px 20px; }
 .chantier-texte h3 { margin: 0 0 4px; }
 .chantier-texte p:last-child { margin-bottom: 0; }
+
+/* Photos d'illustration */
+.photo { margin: 0 0 24px; }
+.photo img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); display: block; }
+.hero-grid { display: grid; gap: 28px; align-items: center; }
+.hero-grid .photo { margin: 0; }
+@media (min-width: 960px) { .hero-grid.avec-photo { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); } }

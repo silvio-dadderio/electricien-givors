@@ -5,6 +5,8 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import Chantier from '../../components/Chantier.astro';
+import Photo from '../../components/Photo.astro';
+import { photo } from '../../lib/photos';
 import { chantiersRecents } from '../../lib/chantiers';
 import { getCollection, render } from 'astro:content';
 import { SITE, telHref } from '../../config';
@@ -43,6 +45,7 @@ const schema = {
   <section class="section">
     <div class="wrap layout-aside">
       <article class="prose">
+        <Photo photo={photo(`services/${service.id}`)} prioritaire />
         <Content />
         {chantiers.length > 0 && (
           <>

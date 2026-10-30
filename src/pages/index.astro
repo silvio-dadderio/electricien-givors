@@ -4,6 +4,8 @@ import Base from '../layouts/Base.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import Chantier from '../components/Chantier.astro';
+import Photo from '../components/Photo.astro';
+import { photo } from '../lib/photos';
 import { chantiersRecents } from '../lib/chantiers';
 import { getCollection } from 'astro:content';
 import { SITE, telHref } from '../config';
@@ -11,6 +13,7 @@ import { communesAvecPage } from '../lib/communes';
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 const articles = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+const photoAccueil = photo('accueil');
 const derniersChantiers = (await chantiersRecents()).slice(0, 3);
 const proches = communesAvecPage.filter((c) => c.km <= 15 && c.slug !== 'givors').sort((a, b) => a.km - b.km);
 
@@ -48,7 +51,8 @@ const webpage = {
   brandSuffix={false}
 >
   <section class="hero">
-    <div class="wrap">
+    <div class:list={['wrap', 'hero-grid', { 'avec-photo': photoAccueil }]}>
+      <div>
       <h1>Électricien à Givors et dans un rayon de 30 km</h1>
       <p class="lead">
         Panne de courant, disjoncteur qui saute, tableau à remplacer, rénovation complète : un seul numéro pour vos
@@ -63,6 +67,8 @@ const webpage = {
         <li>Devis écrit et détaillé avant travaux</li>
         <li>Un interlocuteur unique</li>
       </ul>
+      </div>
+      <Photo photo={photoAccueil} prioritaire />
     </div>
   </section>
 

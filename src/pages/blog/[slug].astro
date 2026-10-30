@@ -4,6 +4,8 @@ import Base from '../../layouts/Base.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
+import Photo from '../../components/Photo.astro';
+import { photo } from '../../lib/photos';
 import { getCollection, getEntry, render } from 'astro:content';
 import { SITE, telHref } from '../../config';
 
@@ -43,6 +45,7 @@ const schema = {
   <section class="section">
     <div class="wrap layout-aside">
       <article class="prose">
+        <Photo photo={photo(`blog/${article.id}`, article.data.service && `services/${article.data.service}`)} prioritaire />
         <Content />
         <Faq items={article.data.faq} />
         <Cta />
