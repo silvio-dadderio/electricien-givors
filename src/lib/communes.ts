@@ -1,4 +1,5 @@
 import data from '../data/communes.json';
+import { estProche } from './regles.mjs';
 
 export type Commune = {
   slug: string;
@@ -12,6 +13,9 @@ export type Commune = {
   lat: number;
   lon: number;
   page: boolean;
+  superficie: number | null;
+  deleguees: string[];
+  direction: string | null;
 };
 
 export const communes = data as Commune[];
@@ -25,18 +29,19 @@ function distance(a: Commune, b: Commune) {
   return 2 * 6371 * Math.asin(Math.sqrt(h));
 }
 
+// Voisines vers lesquelles faire des liens : seulement les pages visibles dans Google
 export function voisines(c: Commune, n = 6) {
   return communesAvecPage
-    .filter((o) => o.slug !== c.slug)
+    .filter((o) => o.slug !== c.slug && estProche(o))
     .map((o) => ({ ...o, d: distance(c, o) }))
     .sort((a, b) => a.d - b.d)
     .slice(0, n);
 }
 
-// Communes sans page dédiée proches de c, pour les citer dans le texte
+// Communes proches sans page visible dans Google, citées en texte simple
 export function villagesProches(c: Commune, n = 5) {
   return communes
-    .filter((o) => !o.page && o.slug !== c.slug)
+    .filter((o) => !(o.page && estProche(o)) && o.slug !== c.slug && o.slug !== 'givors')
     .map((o) => ({ ...o, d: distance(c, o) }))
     .filter((o) => o.d <= 8)
     .sort((a, b) => a.d - b.d)

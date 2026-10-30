@@ -230,8 +230,7 @@ a.card:hover { border-color: var(--yellow-dark); box-shadow: 0 4px 16px rgba(15,
 .chips a:hover { border-color: var(--yellow-dark); }
 .chips span { color: var(--muted); }
 
-.facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0; padding: 0; list-style: none; }
-@media (min-width: 760px) { .facts { grid-template-columns: repeat(4, 1fr); } }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 20px 0; padding: 0; list-style: none; }
 .facts li { background: var(--bg-soft); border-radius: var(--radius); padding: 12px 14px; }
 .facts span { display: block; font-size: .82rem; color: var(--muted); }
 .facts strong { color: var(--navy); }

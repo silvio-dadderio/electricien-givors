@@ -25,11 +25,16 @@ const { c } = Astro.props as { c: Commune };
 const chantiers = (await chantiersRecents()).filter((ch) => ch.data.commune === c.slug);
 const indexable = estProche(c) || chantiers.length > 0;
 const illustration = photosServices.length ? variante(c.slug + 'photo', photosServices) : undefined;
-const estBase = c.slug === 'givors';
 const km = Math.max(1, Math.round(c.km));
 const cp = c.cp.length > 3 ? `${c.cp[0]} à ${c.cp[c.cp.length - 1]}` : c.cp.join(', ');
 const cp1 = c.cp[0];
 const v = (cle: string, options: string[]) => variante(c.slug + cle, options);
+const de = (nom: string) => (/^[aeiouyéèêîô]/i.test(nom) ? `d'${nom}` : `de ${nom}`);
+const autres = (d: string) => {
+  const reste = c.deleguees.filter((x) => x !== d);
+  return reste.length ? `, comme ${liste(reste)}` : '';
+};
+const liste = (noms: string[]) => (noms.length > 1 ? `${noms.slice(0, -1).join(', ')} et ${noms[noms.length - 1]}` : noms[0] ?? '');
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 const articles = (await getCollection('blog')).sort((a, b) => a.id.localeCompare(b.id));
@@ -39,45 +44,59 @@ const proches = voisines(c, 8);
 const villages = villagesProches(c, 5);
 const grande = c.pop >= 15000;
 
-const situation = estBase
-  ? `Givors est notre base : c'est ici que nous sommes le plus proches de vous.`
-  : `${c.nom} se trouve à environ ${km} km de Givors (à vol d'oiseau), dans notre zone d'intervention de ${SITE.radiusKm} km.`;
+// Données de la commune (découpage administratif et contours officiels)
+const duDepartement = { '69': 'du Rhône', '42': 'de la Loire', '38': "de l'Isère", '01': "de l'Ain" }[c.dep] ?? `du ${c.depNom}`;
+const densite = c.superficie ? Math.round(c.pop / c.superficie) : null;
+const epci = c.epci ? (/^(Communauté|Métropole)/.test(c.epci) ? `la ${c.epci}` : c.epci) : null;
+const situation = `${c.nom} se trouve ${c.direction} de Givors, à environ ${km} km à vol d'oiseau, dans notre zone d'intervention de ${SITE.radiusKm} km.`;
+const portrait =
+  `${c.nom} est une commune ${duDepartement} d'environ ${formatPop(c.pop)} habitants` +
+  (c.superficie ? `, sur ${String(c.superficie).replace('.', ',')} km²` : '') +
+  `. Elle se trouve ${c.direction} de Givors, à environ ${km} km à vol d'oiseau.` +
+  (epci ? ` Elle fait partie de ${epci}.` : '') +
+  (c.deleguees.length ? ` Elle regroupe aussi ${liste(c.deleguees)}, où nous intervenons de la même façon.` : '');
 
-const intro = estBase
-  ? `Vous cherchez un électricien à Givors ? Dépannage, tableau électrique, mise aux normes ou rénovation complète : nous intervenons chez les particuliers, dans les copropriétés et chez les professionnels de Givors, du centre-ville aux quartiers résidentiels.`
-  : v('intro', [
-      `Vous cherchez un électricien à ${c.nom} ? Nous intervenons dans toute la commune pour les dépannages comme pour les travaux : panne de courant, disjoncteur qui saute, tableau à remplacer, mise aux normes ou rénovation.`,
-      `Besoin d'un électricien à ${c.nom} (${cp1}) ? Particuliers, copropriétés ou professionnels : nous prenons en charge votre dépannage ou vos travaux électriques, du diagnostic jusqu'à la remise en service.`,
-      `Panne, installation vieillissante ou projet de travaux à ${c.nom} : un seul appel suffit. Nous intervenons depuis Givors pour les dépannages et tous les travaux d'électricité, en maison comme en appartement.`,
-      `Électricien à ${c.nom} : nous intervenons pour les pannes, la sécurité de votre installation et vos projets de rénovation, chez les particuliers comme dans les locaux professionnels.`,
-    ]);
+const intro = v('intro', [
+  `Vous cherchez un électricien à ${c.nom} ? Nous intervenons dans toute la commune pour les dépannages comme pour les travaux : panne de courant, disjoncteur qui saute, tableau à remplacer, mise aux normes ou rénovation.`,
+  `Besoin d'un électricien à ${c.nom} (${cp1}) ? Particuliers, copropriétés ou professionnels : nous prenons en charge votre dépannage ou vos travaux électriques, du diagnostic jusqu'à la remise en service.`,
+  `Panne, installation vieillissante ou projet de travaux à ${c.nom} : un seul appel suffit. Nous intervenons depuis Givors pour les dépannages et tous les travaux d'électricité, en maison comme en appartement.`,
+  `Électricien à ${c.nom} : nous intervenons pour les pannes, la sécurité de votre installation et vos projets de rénovation, chez les particuliers comme dans les locaux professionnels.`,
+  `À ${c.nom}, un problème électrique se règle avec un seul numéro, le ${SITE.phone}. Dépannage, tableau, prises, éclairage ou rénovation : nous nous occupons de tout, du premier appel au contrôle final.`,
+  `Habitants et entreprises de ${c.nom} : pour une panne, une installation à remettre en sécurité ou des travaux d'électricité, nous intervenons depuis Givors, à environ ${km} km.`,
+  `Un disjoncteur qui saute, une prise qui chauffe, un tableau à fusibles à remplacer ? Nous intervenons à ${c.nom} (${cp1}) pour les dépannages et les travaux électriques de toute taille.`,
+  `Vous habitez ${c.nom} ou vous y avez vos locaux ? Nous assurons les dépannages électriques et les travaux d'installation, de mise aux normes et de rénovation dans toute la commune.`,
+]);
 
 const pServices = v('serv', [
   `Voici les interventions que nous réalisons à ${c.nom} et dans les communes voisines.`,
   `À ${c.nom}, comme partout dans notre zone, nous prenons en charge tous les travaux d'un électricien.`,
   `Du simple dépannage au chantier complet, voici ce que nous faisons pour les habitants et les entreprises de ${c.nom}.`,
+  `Chaque service a sa page détaillée : choisissez celui qui correspond à votre besoin à ${c.nom}.`,
 ]);
 
 const pDepannage = v('dep', [
   `Plus de courant, un disjoncteur qui refuse de se réarmer, une prise qui chauffe : appelez le ${SITE.phone}. Nous posons quelques questions pour cerner le problème, puis nous convenons du passage à ${c.nom}. En attendant, si vous sentez une odeur de brûlé, coupez le courant au tableau et ne touchez à rien.`,
   `Une panne électrique ne prévient jamais. Si votre installation à ${c.nom} disjoncte sans raison apparente ou si une partie du logement n'est plus alimentée, appelez-nous au ${SITE.phone}. Nous recherchons l'origine de la panne avant de remplacer quoi que ce soit.`,
   `Avant d'appeler, regardez si vos voisins ont du courant : si toute la rue est coupée, la panne vient du réseau public et c'est Enedis qui intervient (numéro de dépannage sur votre facture). Si la panne est chez vous à ${c.nom}, appelez-nous au ${SITE.phone}.`,
-  `Disjoncteur qui saute, différentiel qui coupe quand il pleut, pièce entière sans courant : ce sont les appels les plus fréquents. À ${c.nom}, nous intervenons pour trouver la cause et remettre votre installation en service en sécurité.`,
+  `Disjoncteur qui saute, différentiel qui coupe quand il pleut, pièce entière sans courant : à ${c.nom}, nous intervenons pour trouver la cause et remettre votre installation en service en sécurité.`,
+  `Quand le courant saute à ${c.nom}, repérez ce qui a coupé au tableau : le disjoncteur général, un différentiel ou un seul circuit. Notez-le et appelez-nous au ${SITE.phone} : cette information fait gagner du temps sur la recherche de panne.`,
+  `Un dépannage commence toujours par un diagnostic. À ${c.nom} comme ailleurs, nous testons les circuits un par un pour trouver la vraie cause, plutôt que de remplacer des pièces au hasard.`,
 ]);
 
 const pTravaux = grande
-  ? `Dans une ville de la taille de ${c.nom} (environ ${formatPop(c.pop)} habitants), nous intervenons aussi bien en appartement qu'en maison, dans les parties communes des copropriétés et dans les commerces ou bureaux. Chaque chantier commence par un diagnostic de l'installation et un devis écrit et détaillé.`
+  ? `Dans une ville de la taille de ${c.nom}, nous intervenons aussi bien en appartement qu'en maison, dans les parties communes des copropriétés et dans les commerces ou bureaux. Chaque chantier commence par un diagnostic de l'installation et un devis écrit et détaillé.`
   : v('trav', [
       `Maison ancienne, pavillon plus récent ou appartement : à ${c.nom}, chaque installation a son histoire. Nous commençons toujours par un diagnostic, puis nous vous remettons un devis écrit et détaillé avant tout démarrage.`,
       `Remplacement du tableau, ajout de prises, rénovation complète avant d'emménager : à ${c.nom}, nous vous accompagnons de la visite jusqu'à la fin du chantier, avec un devis clair au départ.`,
       `Vous achetez à ${c.nom}, vous rénovez ou vous avez reçu un diagnostic électrique avec des anomalies ? Nous faisons le point sur l'installation et nous vous proposons les travaux nécessaires, dans un devis écrit.`,
+      `Ajouter des prises dans une chambre, créer un circuit pour un four ou une plaque, refaire l'éclairage d'une pièce : à ${c.nom}, nous réalisons aussi les petits travaux, avec un devis écrit avant de commencer.`,
+      `Une installation ancienne n'est pas forcément dangereuse, mais elle mérite un contrôle. À ${c.nom}, nous vérifions le tableau, la terre et les protections, puis nous vous disons ce qui est urgent et ce qui peut attendre.`,
+      `Pour une rénovation à ${c.nom}, nous préparons avec vous le plan des circuits, pièce par pièce : prises, éclairage, chauffage, ventilation. Le devis détaille chaque poste.`,
     ]);
 
-const faq = [
-  {
-    q: `Intervenez-vous à ${c.nom} ?`,
-    a: `Oui. ${situation} Appelez le ${SITE.phone} ou envoyez votre demande en ligne pour fixer un rendez-vous.`,
-  },
+// FAQ : une question fixe, puis une sélection propre à chaque commune
+const autour = proches.slice(0, 4).map((o) => o.nom);
+const reserve = [
   {
     q: `Comment obtenir un devis d'électricien à ${c.nom} ?`,
     a: `Appelez-nous ou remplissez le formulaire de demande de devis en précisant que vous êtes à ${c.nom}. Nous vous rappelons pour comprendre le besoin, puis nous établissons un devis écrit et détaillé avant tous travaux.`,
@@ -86,6 +105,36 @@ const faq = [
     q: `Que faire en cas de panne de courant à ${c.nom} ?`,
     a: `Regardez d'abord si vos voisins ont du courant. Si toute la rue est coupée, contactez Enedis (numéro de dépannage sur votre facture d'électricité). Si la panne est seulement chez vous, ne forcez pas un disjoncteur qui saute de nouveau et appelez-nous au ${SITE.phone}.`,
   },
+  ...(autour.length
+    ? [{
+        q: `Intervenez-vous aussi autour de ${c.nom} ?`,
+        a: `Oui, nous intervenons aussi à ${liste(autour)}, et dans toutes les communes situées à moins de ${SITE.radiusKm} km de Givors.`,
+      }]
+    : []),
+  {
+    q: `Intervenez-vous dans les immeubles et copropriétés de ${c.nom} ?`,
+    a: `Oui. Pour les parties communes (éclairage des escaliers, interphone, tableau des services généraux), nous travaillons avec le syndic ou le conseil syndical et nous fournissons un devis écrit.`,
+  },
+  {
+    q: `Faut-il un diagnostic électrique pour vendre un logement à ${c.nom} ?`,
+    a: `Oui, si l'installation électrique a plus de 15 ans. Il est réalisé par un diagnostiqueur certifié et reste valable 3 ans pour une vente. Si des anomalies sont relevées, nous pouvons réaliser les travaux de mise en conformité.`,
+  },
+  {
+    q: `Mon disjoncteur saute souvent à ${c.nom}, que faire ?`,
+    a: `Notez quel disjoncteur coupe et dans quelles circonstances : four et lave-linge en même temps, temps de pluie, nuit. S'il retombe dès que vous le réarmez, laissez-le baissé et appelez-nous au ${SITE.phone}.`,
+  },
+];
+const ordre = reserve.map((r, i) => ({ r, k: variante(c.slug + 'faq' + i, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) }));
+const faq = [
+  {
+    q: `Intervenez-vous à ${c.nom} ?`,
+    a: `Oui. ${situation} Appelez le ${SITE.phone} ou envoyez votre demande en ligne pour fixer un rendez-vous.`,
+  },
+  ...c.deleguees.slice(0, 1).map((d) => ({
+    q: `Intervenez-vous à ${d} ?`,
+    a: `Oui. ${d} fait partie de la commune ${de(c.nom)}${autres(d)}. Nous intervenons partout dans la commune.`,
+  })),
+  ...ordre.sort((a, b) => a.k - b.k).slice(0, 3).map((o) => o.r),
 ];
 
 const schema = {
@@ -103,12 +152,10 @@ const title = [
   `Électricien ${c.nom} (${cp1}) : dépannage`,
   `Électricien à ${c.nom} (${cp1})`,
 ].find((t) => t.length <= 60) ?? `Électricien à ${c.nom}`;
-const description = estBase
-  ? `Électricien à Givors (69700) : dépannage, tableau électrique, mise aux normes, rénovation. Particuliers et professionnels. Appelez le ${SITE.phone}.`
-  : [
-      `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Intervention depuis Givors. Appelez le ${SITE.phone}.`,
-      `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Appelez le ${SITE.phone}.`,
-    ].find((t) => t.length <= 160)!;
+const description = [
+  `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Intervention depuis Givors. Appelez le ${SITE.phone}.`,
+  `Électricien à ${c.nom} (${cp1}) : dépannage, tableau électrique, mise aux normes, rénovation. Appelez le ${SITE.phone}.`,
+].find((t) => t.length <= 160)!;
 ---
 <Base title={title} description={description} schema={[schema]} noindex={!indexable}>
   <div class="page-head">
@@ -123,15 +170,14 @@ const description = estBase
     <div class="wrap layout-aside">
       <article class="prose">
         <ul class="facts">
-          <li><span>Commune</span><strong>{c.nom}</strong></li>
           <li><span>Code postal</span><strong>{cp}</strong></li>
           <li><span>Département</span><strong>{c.depNom} ({c.dep})</strong></li>
-          <li><span>Depuis Givors</span><strong>{estBase ? 'Notre base' : `environ ${km} km`}</strong></li>
+          <li><span>Habitants</span><strong>environ {formatPop(c.pop)}</strong></li>
+          {c.superficie && <li><span>Superficie</span><strong>{String(c.superficie).replace('.', ',')} km²</strong></li>}
+          {densite && <li><span>Densité</span><strong>{formatPop(densite)} hab./km²</strong></li>}
+          <li><span>Depuis Givors</span><strong>environ {km} km</strong></li>
         </ul>
-        <p>
-          {situation}
-          {c.epci && <> La commune fait partie de {/^(Communauté|Métropole)/.test(c.epci) ? `la ${c.epci}` : c.epci}.</>}
-        </p>
+        <p>{portrait}</p>
 
         {chantiers.length > 0 && (
           <>
@@ -141,16 +187,6 @@ const description = estBase
             </div>
           </>
         )}
-
-        <Photo photo={illustration} />
-
-        <h2>Nos interventions à {c.nom}</h2>
-        <p>{pServices}</p>
-        <ul>
-          {services.map((s) => (
-            <li><a href={`/services/${s.id}/`}>{nomCourt(s)}</a> : {s.data.excerpt}</li>
-          ))}
-        </ul>
 
         <h2>Dépannage électrique à {c.nom}</h2>
         <p>{pDepannage}</p>
@@ -166,13 +202,16 @@ const description = estBase
           </p>
         )}
 
+        <Photo photo={illustration} />
+
         <h2>Travaux et rénovation électrique à {c.nom}</h2>
         <p>{pTravaux}</p>
-        <p>
-          Tableau électrique, <a href="/services/mise-aux-normes-electrique/">mise en sécurité</a>,{' '}
-          <a href="/services/renovation-electrique/">rénovation complète</a>, éclairage, chauffage ou VMC : vous avez
-          un seul interlocuteur du premier appel à la fin des travaux.
-        </p>
+
+        <h2>Nos services à {c.nom}</h2>
+        <p>{pServices}</p>
+        <ul class="chips">
+          {services.map((s) => <li><a href={`/services/${s.id}/`}>{nomCourt(s)}</a></li>)}
+        </ul>
 
         <Faq items={faq} title={`Électricien à ${c.nom} : vos questions`} />
         <Cta title={`Un électricien à ${c.nom} ?`} text={`Appelez-nous ou envoyez votre demande, nous vous rappelons pour organiser l'intervention à ${c.nom}.`} />

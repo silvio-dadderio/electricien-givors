@@ -5,7 +5,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import Photo from '../../components/Photo.astro';
-import { photo } from '../../lib/photos';
+import { photo, urlPartage } from '../../lib/photos';
 import { getCollection, getEntry, render } from 'astro:content';
 import { SITE, telHref } from '../../config';
 
@@ -20,6 +20,8 @@ const autres = (await getCollection('blog')).filter((a) => a.id !== article.id).
 const dateIso = article.data.date.toISOString().slice(0, 10);
 const dateFr = article.data.date.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' });
 
+const photoArticle = photo(`blog/${article.id}`, article.data.service && `services/${article.data.service}`);
+const image = (await urlPartage(photoArticle, SITE.url)) ?? `${SITE.url}/og-image.png`;
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
@@ -31,10 +33,10 @@ const schema = {
   mainEntityOfPage: `${SITE.url}/blog/${article.id}/`,
   author: { '@id': `${SITE.url}/#entreprise` },
   publisher: { '@id': `${SITE.url}/#entreprise` },
-  image: `${SITE.url}/og-image.png`,
+  image,
 };
 ---
-<Base title={article.data.seoTitle} description={article.data.description} schema={[schema]}>
+<Base title={article.data.seoTitle} description={article.data.description} schema={[schema]} image={image}>
   <div class="page-head">
     <div class="wrap">
       <Breadcrumbs items={[{ name: 'Conseils', href: '/blog/' }, { name: article.data.title }]} />
@@ -45,7 +47,7 @@ const schema = {
   <section class="section">
     <div class="wrap layout-aside">
       <article class="prose">
-        <Photo photo={photo(`blog/${article.id}`, article.data.service && `services/${article.data.service}`)} prioritaire />
+        <Photo photo={photoArticle} prioritaire />
         <Content />
         <Faq items={article.data.faq} />
         <Cta />

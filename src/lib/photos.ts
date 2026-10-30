@@ -33,3 +33,11 @@ export function lienLicence(licence: string) {
 
 // Une ligne par fichier, pour les crédits des mentions légales
 export const credits = [...new Map(Object.values(photos).map((p) => [p.fichier, p])).values()];
+
+// URL absolue d'une version 1200 px en jpg, pour les partages et les données structurées
+export async function urlPartage(p: Photo | undefined, site: string) {
+  if (!p) return undefined;
+  const { getImage } = await import('astro:assets');
+  const img = await getImage({ src: p.src, width: 1200, format: 'jpg' });
+  return new URL(img.src, site).href;
+}

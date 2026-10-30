@@ -6,7 +6,7 @@ import Faq from '../../components/Faq.astro';
 import Cta from '../../components/Cta.astro';
 import Chantier from '../../components/Chantier.astro';
 import Photo from '../../components/Photo.astro';
-import { photo } from '../../lib/photos';
+import { photo, urlPartage } from '../../lib/photos';
 import { chantiersRecents } from '../../lib/chantiers';
 import { getCollection, render } from 'astro:content';
 import { SITE, telHref } from '../../config';
@@ -23,6 +23,8 @@ const articles = (await getCollection('blog')).filter((a) => a.data.service === 
 const chantiers = (await chantiersRecents()).filter((ch) => ch.data.service === service.id).slice(0, 4);
 const villes = communesAvecPage.filter((c) => c.km <= 12 && c.pop >= 3000).sort((a, b) => a.km - b.km);
 
+const photoService = photo(`services/${service.id}`);
+const image = await urlPartage(photoService, SITE.url);
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
@@ -34,7 +36,7 @@ const schema = {
   url: `${SITE.url}/services/${service.id}/`,
 };
 ---
-<Base title={service.data.seoTitle} description={service.data.description} schema={[schema]}>
+<Base title={service.data.seoTitle} description={service.data.description} schema={[schema]} image={image}>
   <div class="page-head">
     <div class="wrap">
       <Breadcrumbs items={[{ name: 'Services', href: '/services/' }, { name: nomCourt(service) }]} />
@@ -45,7 +47,7 @@ const schema = {
   <section class="section">
     <div class="wrap layout-aside">
       <article class="prose">
-        <Photo photo={photo(`services/${service.id}`)} prioritaire />
+        <Photo photo={photoService} prioritaire />
         <Content />
         {chantiers.length > 0 && (
           <>

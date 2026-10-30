@@ -12,8 +12,9 @@ interface Props {
   schema?: object[];
   noindex?: boolean;
   brandSuffix?: boolean;
+  image?: string;
 }
-const { title, description, schema = [], noindex = false, brandSuffix = true } = Astro.props;
+const { title, description, schema = [], noindex = false, brandSuffix = true, image = `${SITE.url}/og-image.png` } = Astro.props;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const avecMarque = `${title} | ${SITE.brand}`;
 // Adresse de test en .netlify.app : invisible pour Google, sinon doublon du vrai domaine
@@ -32,6 +33,14 @@ const entreprise = {
   url: `${SITE.url}/`,
   telephone: SITE.phoneIntl,
   image: `${SITE.url}/og-image.png`,
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: "Services d'électricité",
+    itemListElement: services.map((s) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name: nomCourt(s), url: `${SITE.url}/services/${s.id}/` },
+    })),
+  },
   areaServed: {
     '@type': 'GeoCircle',
     geoMidpoint: { '@type': 'GeoCoordinates', latitude: SITE.center.lat, longitude: SITE.center.lon },
@@ -61,7 +70,7 @@ const jsonld = [entreprise, ...schema];
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={`${SITE.url}/og-image.png`} />
+    <meta property="og:image" content={image} />
     <meta name="twitter:card" content="summary_large_image" />
     {jsonld.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
   </head>

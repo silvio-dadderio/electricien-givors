@@ -12,7 +12,10 @@
   "km": 0,
   "lat": 45.58131,
   "lon": 4.75823,
-  "page": false
+  "page": false,
+  "superficie": 17.3,
+  "deleguees": [],
+  "direction": null
  },
  {
   "slug": "grigny-sur-rhone",
@@ -27,7 +30,10 @@
   "km": 3.8,
   "lat": 45.60864,
   "lon": 4.78737,
-  "page": true
+  "page": true,
+  "superficie": 5.9,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "echalas",
@@ -42,7 +48,10 @@
   "km": 4.1,
   "lat": 45.55066,
   "lon": 4.72988,
-  "page": true
+  "page": true,
+  "superficie": 20.8,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "loire-sur-rhone",
@@ -57,7 +66,10 @@
   "km": 4.3,
   "lat": 45.54659,
   "lon": 4.78257,
-  "page": true
+  "page": true,
+  "superficie": 16.4,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "beauvallon",
@@ -72,7 +84,14 @@
   "km": 4.4,
   "lat": 45.59178,
   "lon": 4.70357,
-  "page": true
+  "page": true,
+  "superficie": 24.5,
+  "deleguees": [
+   "Chassagny",
+   "Saint-Andéol-le-Château",
+   "Saint-Jean-de-Touslas"
+  ],
+  "direction": "à l'ouest"
  },
  {
   "slug": "chasse-sur-rhone",
@@ -87,7 +106,10 @@
   "km": 4.4,
   "lat": 45.57963,
   "lon": 4.81444,
-  "page": true
+  "page": true,
+  "superficie": 7.8,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-romain-en-gier",
@@ -102,7 +124,10 @@
   "km": 4.5,
   "lat": 45.56603,
   "lon": 4.70425,
-  "page": true
+  "page": true,
+  "superficie": 4.1,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "ternay",
@@ -117,7 +142,10 @@
   "km": 4.6,
   "lat": 45.60492,
   "lon": 4.80699,
-  "page": true
+  "page": true,
+  "superficie": 7.9,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "montagny",
@@ -132,7 +160,10 @@
   "km": 4.9,
   "lat": 45.62497,
   "lon": 4.74988,
-  "page": true
+  "page": true,
+  "superficie": 8.1,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "millery",
@@ -147,7 +178,10 @@
   "km": 5.8,
   "lat": 45.63122,
   "lon": 4.77836,
-  "page": true
+  "page": true,
+  "superficie": 8.7,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "communay",
@@ -162,7 +196,10 @@
   "km": 6.5,
   "lat": 45.59812,
   "lon": 4.83856,
-  "page": true
+  "page": true,
+  "superficie": 10.3,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "taluyers",
@@ -177,7 +214,10 @@
   "km": 6.7,
   "lat": 45.63661,
   "lon": 4.72334,
-  "page": true
+  "page": true,
+  "superficie": 8.1,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "dargoire",
@@ -192,7 +232,10 @@
   "km": 6.8,
   "lat": 45.56297,
   "lon": 4.67495,
-  "page": true
+  "page": true,
+  "superficie": 1.9,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "seyssuel",
@@ -207,7 +250,10 @@
   "km": 7,
   "lat": 45.56005,
   "lon": 4.84324,
-  "page": true
+  "page": true,
+  "superficie": 9.6,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-romain-en-gal",
@@ -222,7 +268,10 @@
   "km": 7.3,
   "lat": 45.53582,
   "lon": 4.82633,
-  "page": true
+  "page": true,
+  "superficie": 13.5,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "serezin-du-rhone",
@@ -237,7 +286,10 @@
   "km": 7.3,
   "lat": 45.62783,
   "lon": 4.8249,
-  "page": true
+  "page": true,
+  "superficie": 3.8,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "treves",
@@ -252,7 +304,10 @@
   "km": 7.5,
   "lat": 45.53464,
   "lon": 4.68892,
-  "page": true
+  "page": true,
+  "superficie": 7.7,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "mornant",
@@ -267,7 +322,10 @@
   "km": 7.6,
   "lat": 45.61627,
   "lon": 4.6736,
-  "page": true
+  "page": true,
+  "superficie": 15.7,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "les-haies",
@@ -282,7 +340,10 @@
   "km": 7.8,
   "lat": 45.51225,
   "lon": 4.73801,
-  "page": true
+  "page": true,
+  "superficie": 15.8,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "tartaras",
@@ -297,7 +358,10 @@
   "km": 7.9,
   "lat": 45.55425,
   "lon": 4.66383,
-  "page": true
+  "page": true,
+  "superficie": 3.9,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "charly",
@@ -312,7 +376,10 @@
   "km": 8.1,
   "lat": 45.65086,
   "lon": 4.79052,
-  "page": true
+  "page": true,
+  "superficie": 5.1,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "vernaison",
@@ -327,7 +394,10 @@
   "km": 8.6,
   "lat": 45.64949,
   "lon": 4.80979,
-  "page": true
+  "page": true,
+  "superficie": 4.2,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "vourles",
@@ -342,7 +412,10 @@
   "km": 8.6,
   "lat": 45.65792,
   "lon": 4.76842,
-  "page": true
+  "page": true,
+  "superficie": 5.5,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "saint-laurent-d-agny",
@@ -357,7 +430,10 @@
   "km": 8.9,
   "lat": 45.64291,
   "lon": 4.68427,
-  "page": true
+  "page": true,
+  "superficie": 10.5,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "saint-cyr-sur-le-rhone",
@@ -372,7 +448,10 @@
   "km": 9.2,
   "lat": 45.51687,
   "lon": 4.83176,
-  "page": true
+  "page": true,
+  "superficie": 6.1,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "ampuis",
@@ -387,7 +466,10 @@
   "km": 9.3,
   "lat": 45.50339,
   "lon": 4.80309,
-  "page": true
+  "page": true,
+  "superficie": 15.4,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "orlienas",
@@ -402,7 +484,10 @@
   "km": 9.4,
   "lat": 45.66115,
   "lon": 4.72047,
-  "page": true
+  "page": true,
+  "superficie": 10.3,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "simandres",
@@ -417,7 +502,10 @@
   "km": 9.4,
   "lat": 45.61185,
   "lon": 4.87098,
-  "page": true
+  "page": true,
+  "superficie": 9.4,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "chuzelles",
@@ -432,7 +520,10 @@
   "km": 9.4,
   "lat": 45.57562,
   "lon": 4.87838,
-  "page": true
+  "page": true,
+  "superficie": 13.3,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "solaize",
@@ -447,7 +538,10 @@
   "km": 9.5,
   "lat": 45.64588,
   "lon": 4.83834,
-  "page": true
+  "page": true,
+  "superficie": 8.1,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "sainte-colombe",
@@ -462,7 +556,10 @@
   "km": 10,
   "lat": 45.52529,
   "lon": 4.85831,
-  "page": true
+  "page": true,
+  "superficie": 1.6,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "tupin-et-semons",
@@ -477,7 +574,10 @@
   "km": 10.1,
   "lat": 45.49089,
   "lon": 4.77429,
-  "page": false
+  "page": false,
+  "superficie": 8.2,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "chabaniere",
@@ -492,7 +592,14 @@
   "km": 10.4,
   "lat": 45.58967,
   "lon": 4.62571,
-  "page": true
+  "page": true,
+  "superficie": 34.7,
+  "deleguees": [
+   "Saint-Didier-sous-Riverie",
+   "Saint-Maurice-sur-Dargoire",
+   "Saint-Sorlin"
+  ],
+  "direction": "à l'ouest"
  },
  {
   "slug": "longes",
@@ -507,7 +614,10 @@
   "km": 10.5,
   "lat": 45.50428,
   "lon": 4.67978,
-  "page": false
+  "page": false,
+  "superficie": 23.8,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "brignais",
@@ -522,7 +632,10 @@
   "km": 10.7,
   "lat": 45.67777,
   "lon": 4.75274,
-  "page": true
+  "page": true,
+  "superficie": 10.3,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "saint-symphorien-d-ozon",
@@ -537,7 +650,10 @@
   "km": 11,
   "lat": 45.64265,
   "lon": 4.8695,
-  "page": true
+  "page": true,
+  "superficie": 13.3,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "saint-joseph",
@@ -552,7 +668,10 @@
   "km": 11.2,
   "lat": 45.55521,
   "lon": 4.61939,
-  "page": false
+  "page": false,
+  "superficie": 8.2,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "irigny",
@@ -567,7 +686,10 @@
   "km": 11.4,
   "lat": 45.67488,
   "lon": 4.81794,
-  "page": true
+  "page": true,
+  "superficie": 8.8,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "chaussan",
@@ -582,7 +704,10 @@
   "km": 11.5,
   "lat": 45.63727,
   "lon": 4.63411,
-  "page": false
+  "page": false,
+  "superficie": 7.9,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "vienne",
@@ -597,7 +722,10 @@
   "km": 11.7,
   "lat": 45.52082,
   "lon": 4.88074,
-  "page": true
+  "page": true,
+  "superficie": 22.5,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "soucieu-en-jarrest",
@@ -612,7 +740,10 @@
   "km": 11.8,
   "lat": 45.67708,
   "lon": 4.69215,
-  "page": true
+  "page": true,
+  "superficie": 14.2,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "condrieu",
@@ -627,7 +758,10 @@
   "km": 11.9,
   "lat": 45.4739,
   "lon": 4.75737,
-  "page": true
+  "page": true,
+  "superficie": 9.1,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "la-chapelle-villars",
@@ -642,7 +776,10 @@
   "km": 11.9,
   "lat": 45.47842,
   "lon": 4.71547,
-  "page": false
+  "page": false,
+  "superficie": 8.3,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "villette-de-vienne",
@@ -657,7 +794,10 @@
   "km": 12.1,
   "lat": 45.58943,
   "lon": 4.91298,
-  "page": true
+  "page": true,
+  "superficie": 11,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "chateauneuf",
@@ -672,7 +812,10 @@
   "km": 12.2,
   "lat": 45.51474,
   "lon": 4.63398,
-  "page": false
+  "page": false,
+  "superficie": 13.5,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "marennes",
@@ -687,7 +830,10 @@
   "km": 12.5,
   "lat": 45.62302,
   "lon": 4.90734,
-  "page": false
+  "page": false,
+  "superficie": 12.4,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-genis-laval",
@@ -702,7 +848,10 @@
   "km": 12.8,
   "lat": 45.69432,
   "lon": 4.7894,
-  "page": true
+  "page": true,
+  "superficie": 12.8,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "feyzin",
@@ -717,7 +866,10 @@
   "km": 12.8,
   "lat": 45.67334,
   "lon": 4.85801,
-  "page": true
+  "page": true,
+  "superficie": 10.4,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "serpaize",
@@ -732,7 +884,10 @@
   "km": 12.8,
   "lat": 45.55739,
   "lon": 4.91955,
-  "page": true
+  "page": true,
+  "superficie": 11.4,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "reventin-vaugris",
@@ -747,7 +902,10 @@
   "km": 13.1,
   "lat": 45.47954,
   "lon": 4.84401,
-  "page": true
+  "page": true,
+  "superficie": 18.3,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "riverie",
@@ -762,7 +920,10 @@
   "km": 13.3,
   "lat": 45.59817,
   "lon": 4.58886,
-  "page": false
+  "page": false,
+  "superficie": 0.4,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "rive-de-gier",
@@ -777,7 +938,10 @@
   "km": 13.3,
   "lat": 45.52242,
   "lon": 4.60975,
-  "page": true
+  "page": true,
+  "superficie": 7.3,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "saint-martin-la-plaine",
@@ -792,7 +956,10 @@
   "km": 13.4,
   "lat": 45.55225,
   "lon": 4.59119,
-  "page": true
+  "page": true,
+  "superficie": 9.6,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "chonas-l-amballan",
@@ -807,7 +974,10 @@
   "km": 13.4,
   "lat": 45.46487,
   "lon": 4.80293,
-  "page": false
+  "page": false,
+  "superficie": 7.4,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "verin",
@@ -822,7 +992,10 @@
   "km": 13.5,
   "lat": 45.46038,
   "lon": 4.74163,
-  "page": false
+  "page": false,
+  "superficie": 3.2,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "rontalon",
@@ -837,7 +1010,10 @@
   "km": 13.8,
   "lat": 45.65713,
   "lon": 4.61847,
-  "page": false
+  "page": false,
+  "superficie": 12.6,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "saint-andre-la-cote",
@@ -852,7 +1028,10 @@
   "km": 13.8,
   "lat": 45.6324,
   "lon": 4.59694,
-  "page": false
+  "page": false,
+  "superficie": 4.8,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "pont-eveque",
@@ -867,7 +1046,10 @@
   "km": 13.9,
   "lat": 45.53466,
   "lon": 4.92363,
-  "page": true
+  "page": true,
+  "superficie": 8.7,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "chaponost",
@@ -882,7 +1064,10 @@
   "km": 14.2,
   "lat": 45.70895,
   "lon": 4.7455,
-  "page": true
+  "page": true,
+  "superficie": 16.1,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "les-roches-de-condrieu",
@@ -897,7 +1082,10 @@
   "km": 14.2,
   "lat": 45.45339,
   "lon": 4.76462,
-  "page": true
+  "page": true,
+  "superficie": 1,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "sainte-catherine",
@@ -912,7 +1100,10 @@
   "km": 14.6,
   "lat": 45.60288,
   "lon": 4.57268,
-  "page": false
+  "page": false,
+  "superficie": 13.7,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "chuyer",
@@ -927,7 +1118,10 @@
   "km": 14.6,
   "lat": 45.45566,
   "lon": 4.70302,
-  "page": false
+  "page": false,
+  "superficie": 11.6,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "messimy",
@@ -942,7 +1136,10 @@
   "km": 14.7,
   "lat": 45.69893,
   "lon": 4.67247,
-  "page": true
+  "page": true,
+  "superficie": 11,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "oullins-pierre-benite",
@@ -958,7 +1155,13 @@
   "km": 14.8,
   "lat": 45.70842,
   "lon": 4.81519,
-  "page": true
+  "page": true,
+  "superficie": 8.7,
+  "deleguees": [
+   "Oullins",
+   "Pierre-Bénite"
+  ],
+  "direction": "au nord"
  },
  {
   "slug": "pavezin",
@@ -973,7 +1176,10 @@
   "km": 15,
   "lat": 45.46496,
   "lon": 4.6607,
-  "page": false
+  "page": false,
+  "superficie": 8.7,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "sainte-croix-en-jarez",
@@ -988,7 +1194,10 @@
   "km": 15.1,
   "lat": 45.47725,
   "lon": 4.63399,
-  "page": false
+  "page": false,
+  "superficie": 12,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "corbas",
@@ -1003,7 +1212,10 @@
   "km": 15.2,
   "lat": 45.66829,
   "lon": 4.90864,
-  "page": true
+  "page": true,
+  "superficie": 11.8,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "saint-fons",
@@ -1018,7 +1230,10 @@
   "km": 15.2,
   "lat": 45.70152,
   "lon": 4.85063,
-  "page": true
+  "page": true,
+  "superficie": 6,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "genilac",
@@ -1033,7 +1248,12 @@
   "km": 15.3,
   "lat": 45.5347,
   "lon": 4.57358,
-  "page": true
+  "page": true,
+  "superficie": 8.5,
+  "deleguees": [
+   "La Cula"
+  ],
+  "direction": "à l'ouest"
  },
  {
   "slug": "thurins",
@@ -1048,7 +1268,10 @@
   "km": 15.4,
   "lat": 45.68383,
   "lon": 4.62587,
-  "page": true
+  "page": true,
+  "superficie": 19.1,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "saint-michel-sur-rhone",
@@ -1063,7 +1286,10 @@
   "km": 15.4,
   "lat": 45.44387,
   "lon": 4.73353,
-  "page": false
+  "page": false,
+  "superficie": 5.9,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "jardin",
@@ -1078,7 +1304,10 @@
   "km": 15.4,
   "lat": 45.49282,
   "lon": 4.91029,
-  "page": true
+  "page": true,
+  "superficie": 9.3,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "luzinay",
@@ -1093,7 +1322,10 @@
   "km": 15.5,
   "lat": 45.58937,
   "lon": 4.9568,
-  "page": true
+  "page": true,
+  "superficie": 18.9,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-prim",
@@ -1108,7 +1340,10 @@
   "km": 15.5,
   "lat": 45.44542,
   "lon": 4.80117,
-  "page": false
+  "page": false,
+  "superficie": 7.2,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "chaponnay",
@@ -1123,7 +1358,10 @@
   "km": 15.8,
   "lat": 45.62831,
   "lon": 4.95053,
-  "page": true
+  "page": true,
+  "superficie": 18.8,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "lorette",
@@ -1138,7 +1376,10 @@
   "km": 15.8,
   "lat": 45.51121,
   "lon": 4.58184,
-  "page": true
+  "page": true,
+  "superficie": 3.4,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "brindas",
@@ -1153,7 +1394,10 @@
   "km": 16,
   "lat": 45.72046,
   "lon": 4.70344,
-  "page": true
+  "page": true,
+  "superficie": 11.3,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "farnay",
@@ -1168,7 +1412,10 @@
   "km": 16.2,
   "lat": 45.48472,
   "lon": 4.60181,
-  "page": false
+  "page": false,
+  "superficie": 7.3,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "saint-clair-du-rhone",
@@ -1183,7 +1430,10 @@
   "km": 16.3,
   "lat": 45.43514,
   "lon": 4.77281,
-  "page": true
+  "page": true,
+  "superficie": 7.2,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "venissieux",
@@ -1198,7 +1448,10 @@
   "km": 16.7,
   "lat": 45.70413,
   "lon": 4.88134,
-  "page": true
+  "page": true,
+  "superficie": 15.3,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "chagnon",
@@ -1213,7 +1466,10 @@
   "km": 16.7,
   "lat": 45.53364,
   "lon": 4.55447,
-  "page": false
+  "page": false,
+  "superficie": 2.5,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "les-cotes-d-arey",
@@ -1228,7 +1484,10 @@
   "km": 16.8,
   "lat": 45.45665,
   "lon": 4.87951,
-  "page": true
+  "page": true,
+  "superficie": 24.2,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "saint-romain-en-jarez",
@@ -1243,7 +1502,10 @@
   "km": 17,
   "lat": 45.56517,
   "lon": 4.54164,
-  "page": false
+  "page": false,
+  "superficie": 16.9,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "la-mulatiere",
@@ -1258,7 +1520,10 @@
   "km": 17.1,
   "lat": 45.73038,
   "lon": 4.81271,
-  "page": true
+  "page": true,
+  "superficie": 1.9,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "estrablin",
@@ -1273,7 +1538,10 @@
   "km": 17.3,
   "lat": 45.51344,
   "lon": 4.95871,
-  "page": true
+  "page": true,
+  "superficie": 20.7,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "francheville",
@@ -1288,7 +1556,10 @@
   "km": 17.4,
   "lat": 45.73791,
   "lon": 4.75631,
-  "page": true
+  "page": true,
+  "superficie": 8.2,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "sainte-foy-les-lyon",
@@ -1303,7 +1574,10 @@
   "km": 17.4,
   "lat": 45.73579,
   "lon": 4.79362,
-  "page": true
+  "page": true,
+  "superficie": 6.8,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "mions",
@@ -1318,7 +1592,10 @@
   "km": 17.5,
   "lat": 45.66507,
   "lon": 4.94908,
-  "page": true
+  "page": true,
+  "superficie": 11.5,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "la-grand-croix",
@@ -1333,7 +1610,10 @@
   "km": 17.7,
   "lat": 45.50425,
   "lon": 4.55884,
-  "page": true
+  "page": true,
+  "superficie": 4,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "saint-martin-en-haut",
@@ -1348,7 +1628,10 @@
   "km": 17.8,
   "lat": 45.65791,
   "lon": 4.55796,
-  "page": true
+  "page": true,
+  "superficie": 38.8,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "auberives-sur-vareze",
@@ -1363,7 +1646,10 @@
   "km": 17.8,
   "lat": 45.42692,
   "lon": 4.81877,
-  "page": false
+  "page": false,
+  "superficie": 7,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "septeme",
@@ -1378,7 +1664,10 @@
   "km": 18.1,
   "lat": 45.54778,
   "lon": 4.98538,
-  "page": true
+  "page": true,
+  "superficie": 21.6,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-alban-du-rhone",
@@ -1393,7 +1682,10 @@
   "km": 18.1,
   "lat": 45.41825,
   "lon": 4.75458,
-  "page": false
+  "page": false,
+  "superficie": 3.4,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "chavanay",
@@ -1408,7 +1700,10 @@
   "km": 18.2,
   "lat": 45.41897,
   "lon": 4.72823,
-  "page": true
+  "page": true,
+  "superficie": 15,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "craponne",
@@ -1423,7 +1718,10 @@
   "km": 18.5,
   "lat": 45.74584,
   "lon": 4.72689,
-  "page": true
+  "page": true,
+  "superficie": 4.7,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "saint-sorlin-de-vienne",
@@ -1438,7 +1736,10 @@
   "km": 18.5,
   "lat": 45.47365,
   "lon": 4.93851,
-  "page": false
+  "page": false,
+  "superficie": 9.9,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "cheyssieu",
@@ -1453,7 +1754,10 @@
   "km": 18.5,
   "lat": 45.42544,
   "lon": 4.84252,
-  "page": false
+  "page": false,
+  "superficie": 8.6,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "saint-paul-en-jarez",
@@ -1468,7 +1772,10 @@
   "km": 18.7,
   "lat": 45.47005,
   "lon": 4.57887,
-  "page": true
+  "page": true,
+  "superficie": 19.8,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "clonas-sur-vareze",
@@ -1483,7 +1790,10 @@
   "km": 18.7,
   "lat": 45.41468,
   "lon": 4.79256,
-  "page": false
+  "page": false,
+  "superficie": 6.7,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "vaugneray",
@@ -1498,7 +1808,10 @@
   "km": 18.8,
   "lat": 45.72979,
   "lon": 4.64273,
-  "page": true
+  "page": true,
+  "superficie": 25,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "yzeron",
@@ -1513,7 +1826,10 @@
   "km": 19,
   "lat": 45.70905,
   "lon": 4.59562,
-  "page": false
+  "page": false,
+  "superficie": 10.6,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "cellieu",
@@ -1528,7 +1844,10 @@
   "km": 19,
   "lat": 45.52166,
   "lon": 4.53,
-  "page": false
+  "page": false,
+  "superficie": 12,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "larajasse",
@@ -1543,7 +1862,10 @@
   "km": 19.2,
   "lat": 45.60801,
   "lon": 4.51445,
-  "page": false
+  "page": false,
+  "superficie": 33.4,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "pelussin",
@@ -1558,7 +1880,10 @@
   "km": 19.2,
   "lat": 45.42276,
   "lon": 4.65964,
-  "page": true
+  "page": true,
+  "superficie": 32.2,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "saint-just-chaleyssin",
@@ -1573,7 +1898,10 @@
   "km": 19.2,
   "lat": 45.58685,
   "lon": 5.00456,
-  "page": true
+  "page": true,
+  "superficie": 13.9,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "grezieu-la-varenne",
@@ -1588,7 +1916,10 @@
   "km": 19.3,
   "lat": 45.74787,
   "lon": 4.68994,
-  "page": true
+  "page": true,
+  "superficie": 7.5,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "toussieu",
@@ -1603,7 +1934,10 @@
   "km": 19.4,
   "lat": 45.65745,
   "lon": 4.98206,
-  "page": true
+  "page": true,
+  "superficie": 5.1,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "l-horme",
@@ -1618,7 +1952,10 @@
   "km": 19.6,
   "lat": 45.49168,
   "lon": 4.5408,
-  "page": true
+  "page": true,
+  "superficie": 4.5,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "valfleury",
@@ -1633,7 +1970,10 @@
   "km": 19.7,
   "lat": 45.54198,
   "lon": 4.51182,
-  "page": false
+  "page": false,
+  "superficie": 8.8,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "saint-priest",
@@ -1648,7 +1988,10 @@
   "km": 20,
   "lat": 45.7017,
   "lon": 4.94902,
-  "page": true
+  "page": true,
+  "superficie": 29.5,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "chalon",
@@ -1663,7 +2006,10 @@
   "km": 20,
   "lat": 45.45163,
   "lon": 4.93681,
-  "page": false
+  "page": false,
+  "superficie": 5.2,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "saint-genis-les-ollieres",
@@ -1678,7 +2024,10 @@
   "km": 20.1,
   "lat": 45.76116,
   "lon": 4.72701,
-  "page": false
+  "page": false,
+  "superficie": 3.7,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "vernioz",
@@ -1693,7 +2042,10 @@
   "km": 20.1,
   "lat": 45.43013,
   "lon": 4.89954,
-  "page": false
+  "page": false,
+  "superficie": 11.1,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "lyon",
@@ -1716,7 +2068,10 @@
   "km": 20.2,
   "lat": 45.75485,
   "lon": 4.83638,
-  "page": true
+  "page": true,
+  "superficie": 47.7,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "tassin-la-demi-lune",
@@ -1731,7 +2086,10 @@
   "km": 20.2,
   "lat": 45.76292,
   "lon": 4.75492,
-  "page": true
+  "page": true,
+  "superficie": 7.9,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "la-terrasse-sur-dorlay",
@@ -1746,7 +2104,10 @@
   "km": 20.4,
   "lat": 45.44768,
   "lon": 4.5783,
-  "page": false
+  "page": false,
+  "superficie": 8.6,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "saint-pierre-de-chandieu",
@@ -1761,7 +2122,10 @@
   "km": 20.7,
   "lat": 45.64498,
   "lon": 5.0089,
-  "page": false
+  "page": false,
+  "superficie": 29,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "bron",
@@ -1776,7 +2140,10 @@
   "km": 20.8,
   "lat": 45.7345,
   "lon": 4.91189,
-  "page": true
+  "page": true,
+  "superficie": 10.2,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "saint-maurice-l-exil",
@@ -1791,7 +2158,10 @@
   "km": 21.1,
   "lat": 45.39225,
   "lon": 4.77721,
-  "page": false
+  "page": false,
+  "superficie": 13.4,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "valencin",
@@ -1806,7 +2176,10 @@
   "km": 21.2,
   "lat": 45.60759,
   "lon": 5.02793,
-  "page": false
+  "page": false,
+  "superficie": 9.6,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "assieu",
@@ -1821,7 +2194,10 @@
   "km": 21.2,
   "lat": 45.40992,
   "lon": 4.87786,
-  "page": false
+  "page": false,
+  "superficie": 12.2,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "oytier-saint-oblas",
@@ -1836,7 +2212,10 @@
   "km": 21.3,
   "lat": 45.56422,
   "lon": 5.0311,
-  "page": false
+  "page": false,
+  "superficie": 14.1,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "duerne",
@@ -1851,7 +2230,10 @@
   "km": 21.4,
   "lat": 45.68118,
   "lon": 4.52293,
-  "page": false
+  "page": false,
+  "superficie": 11.3,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "marcenod",
@@ -1866,7 +2248,10 @@
   "km": 21.6,
   "lat": 45.57283,
   "lon": 4.48147,
-  "page": false
+  "page": false,
+  "superficie": 9,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "bessey",
@@ -1881,7 +2266,10 @@
   "km": 21.7,
   "lat": 45.39061,
   "lon": 4.7021,
-  "page": false
+  "page": false,
+  "superficie": 6.2,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "la-chapelle-sur-coise",
@@ -1896,7 +2284,10 @@
   "km": 21.8,
   "lat": 45.65022,
   "lon": 4.49576,
-  "page": false
+  "page": false,
+  "superficie": 6.6,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "malleval",
@@ -1911,7 +2302,10 @@
   "km": 21.9,
   "lat": 45.38561,
   "lon": 4.72619,
-  "page": false
+  "page": false,
+  "superficie": 5.1,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "moidieu-detourbe",
@@ -1926,7 +2320,10 @@
   "km": 21.9,
   "lat": 45.51208,
   "lon": 5.02163,
-  "page": false
+  "page": false,
+  "superficie": 17.8,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "sainte-consorce",
@@ -1941,7 +2338,10 @@
   "km": 22,
   "lat": 45.77423,
   "lon": 4.69267,
-  "page": false
+  "page": false,
+  "superficie": 5.9,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "eyzin-pinet",
@@ -1956,7 +2356,10 @@
   "km": 22,
   "lat": 45.47794,
   "lon": 4.99854,
-  "page": false
+  "page": false,
+  "superficie": 28.2,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "monsteroux-milieu",
@@ -1971,7 +2374,10 @@
   "km": 22,
   "lat": 45.43499,
   "lon": 4.9474,
-  "page": false
+  "page": false,
+  "superficie": 8.1,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "charbonnieres-les-bains",
@@ -1986,7 +2392,10 @@
   "km": 22.1,
   "lat": 45.77995,
   "lon": 4.74356,
-  "page": false
+  "page": false,
+  "superficie": 4.1,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "pollionnay",
@@ -2001,7 +2410,10 @@
   "km": 22.2,
   "lat": 45.76829,
   "lon": 4.65929,
-  "page": false
+  "page": false,
+  "superficie": 15.7,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "ecully",
@@ -2016,7 +2428,10 @@
   "km": 22.3,
   "lat": 45.78182,
   "lon": 4.77272,
-  "page": true
+  "page": true,
+  "superficie": 8.3,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "doizieux",
@@ -2031,7 +2446,10 @@
   "km": 22.4,
   "lat": 45.41819,
   "lon": 4.58934,
-  "page": false
+  "page": false,
+  "superficie": 27.7,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "montromant",
@@ -2046,7 +2464,10 @@
   "km": 22.6,
   "lat": 45.71107,
   "lon": 4.53485,
-  "page": false
+  "page": false,
+  "superficie": 11.2,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "roisey",
@@ -2061,7 +2482,10 @@
   "km": 22.6,
   "lat": 45.391,
   "lon": 4.65689,
-  "page": false
+  "page": false,
+  "superficie": 13,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "saint-pierre-de-b-uf",
@@ -2076,7 +2500,10 @@
   "km": 22.7,
   "lat": 45.37719,
   "lon": 4.74457,
-  "page": false
+  "page": false,
+  "superficie": 6,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "coise",
@@ -2091,7 +2518,10 @@
   "km": 22.8,
   "lat": 45.61451,
   "lon": 4.46931,
-  "page": false
+  "page": false,
+  "superficie": 9.1,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "marcy-l-etoile",
@@ -2106,7 +2536,10 @@
   "km": 22.9,
   "lat": 45.78496,
   "lon": 4.7117,
-  "page": false
+  "page": false,
+  "superficie": 5.3,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "courzieu",
@@ -2121,7 +2554,10 @@
   "km": 23,
   "lat": 45.74087,
   "lon": 4.57053,
-  "page": false
+  "page": false,
+  "superficie": 26.7,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "roussillon",
@@ -2136,7 +2572,10 @@
   "km": 23,
   "lat": 45.37878,
   "lon": 4.81862,
-  "page": false
+  "page": false,
+  "superficie": 11.7,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "chatelus",
@@ -2151,7 +2590,10 @@
   "km": 23.1,
   "lat": 45.58966,
   "lon": 4.46191,
-  "page": false
+  "page": false,
+  "superficie": 2.5,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "saint-christo-en-jarez",
@@ -2166,7 +2608,10 @@
   "km": 23.2,
   "lat": 45.53601,
   "lon": 4.46721,
-  "page": false
+  "page": false,
+  "superficie": 22,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "villeurbanne",
@@ -2181,7 +2626,10 @@
   "km": 23.4,
   "lat": 45.77087,
   "lon": 4.88921,
-  "page": true
+  "page": true,
+  "superficie": 14.8,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "saint-chamond",
@@ -2196,7 +2644,10 @@
   "km": 23.5,
   "lat": 45.46998,
   "lon": 4.50205,
-  "page": true
+  "page": true,
+  "superficie": 54.8,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "chassieu",
@@ -2211,7 +2662,10 @@
   "km": 23.6,
   "lat": 45.73808,
   "lon": 4.96228,
-  "page": true
+  "page": true,
+  "superficie": 11.5,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "saint-romain-de-surieu",
@@ -2226,7 +2680,10 @@
   "km": 23.6,
   "lat": 45.38976,
   "lon": 4.88936,
-  "page": false
+  "page": false,
+  "superficie": 4.8,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "lupe",
@@ -2241,7 +2698,10 @@
   "km": 23.7,
   "lat": 45.37214,
   "lon": 4.70039,
-  "page": false
+  "page": false,
+  "superficie": 1.4,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "montseveroux",
@@ -2256,7 +2716,10 @@
   "km": 23.8,
   "lat": 45.42977,
   "lon": 4.9742,
-  "page": false
+  "page": false,
+  "superficie": 16.6,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "le-peage-de-roussillon",
@@ -2271,7 +2734,10 @@
   "km": 23.8,
   "lat": 45.36843,
   "lon": 4.78333,
-  "page": false
+  "page": false,
+  "superficie": 7.4,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "heyrieux",
@@ -2286,7 +2752,10 @@
   "km": 24,
   "lat": 45.62819,
   "lon": 5.05919,
-  "page": false
+  "page": false,
+  "superficie": 13.8,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "ville-sous-anjou",
@@ -2301,7 +2770,10 @@
   "km": 24.1,
   "lat": 45.37646,
   "lon": 4.85853,
-  "page": false
+  "page": false,
+  "superficie": 18.1,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "saint-bonnet-de-mure",
@@ -2316,7 +2788,10 @@
   "km": 24.2,
   "lat": 45.69615,
   "lon": 5.02226,
-  "page": false
+  "page": false,
+  "superficie": 16.5,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "champagne-au-mont-d-or",
@@ -2331,7 +2806,10 @@
   "km": 24.2,
   "lat": 45.79826,
   "lon": 4.78669,
-  "page": false
+  "page": false,
+  "superficie": 2.6,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "la-chapelle-de-surieu",
@@ -2346,7 +2824,10 @@
   "km": 24.2,
   "lat": 45.39431,
   "lon": 4.91631,
-  "page": false
+  "page": false,
+  "superficie": 11.2,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "aveize",
@@ -2361,7 +2842,10 @@
   "km": 24.6,
   "lat": 45.67942,
   "lon": 4.47524,
-  "page": false
+  "page": false,
+  "superficie": 16.8,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "saint-symphorien-sur-coise",
@@ -2376,7 +2860,10 @@
   "km": 24.6,
   "lat": 45.63117,
   "lon": 4.45013,
-  "page": false
+  "page": false,
+  "superficie": 4,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "grammond",
@@ -2391,7 +2878,10 @@
   "km": 24.7,
   "lat": 45.57352,
   "lon": 4.44129,
-  "page": false
+  "page": false,
+  "superficie": 8.1,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "saint-pierre-la-palud",
@@ -2406,7 +2896,10 @@
   "km": 24.8,
   "lat": 45.78125,
   "lon": 4.6167,
-  "page": false
+  "page": false,
+  "superficie": 7.4,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "chevinay",
@@ -2421,7 +2914,10 @@
   "km": 24.8,
   "lat": 45.77327,
   "lon": 4.59643,
-  "page": false
+  "page": false,
+  "superficie": 8.6,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "maclas",
@@ -2436,7 +2932,10 @@
   "km": 25,
   "lat": 45.36064,
   "lon": 4.69805,
-  "page": false
+  "page": false,
+  "superficie": 10.2,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "caluire-et-cuire",
@@ -2451,7 +2950,10 @@
   "km": 25.1,
   "lat": 45.79752,
   "lon": 4.85164,
-  "page": true
+  "page": true,
+  "superficie": 10.4,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "veranne",
@@ -2466,7 +2968,10 @@
   "km": 25.1,
   "lat": 45.37217,
   "lon": 4.63542,
-  "page": false
+  "page": false,
+  "superficie": 16.1,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "saint-georges-d-esperanche",
@@ -2481,7 +2986,10 @@
   "km": 25.1,
   "lat": 45.5596,
   "lon": 5.07966,
-  "page": false
+  "page": false,
+  "superficie": 24.5,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-genis-l-argentiere",
@@ -2496,7 +3004,10 @@
   "km": 25.2,
   "lat": 45.71367,
   "lon": 4.49544,
-  "page": false
+  "page": false,
+  "superficie": 10.8,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "pomeys",
@@ -2511,7 +3022,10 @@
   "km": 25.4,
   "lat": 45.64617,
   "lon": 4.44553,
-  "page": false
+  "page": false,
+  "superficie": 13.3,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "savas-mepin",
@@ -2526,7 +3040,10 @@
   "km": 25.4,
   "lat": 45.49697,
   "lon": 5.06162,
-  "page": false
+  "page": false,
+  "superficie": 10.4,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-denis-sur-coise",
@@ -2541,7 +3058,10 @@
   "km": 25.6,
   "lat": 45.61132,
   "lon": 4.4314,
-  "page": false
+  "page": false,
+  "superficie": 10.7,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "cour-et-buis",
@@ -2556,7 +3076,10 @@
   "km": 25.6,
   "lat": 45.44048,
   "lon": 5.01828,
-  "page": false
+  "page": false,
+  "superficie": 13.8,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "dardilly",
@@ -2571,7 +3094,10 @@
   "km": 25.7,
   "lat": 45.81216,
   "lon": 4.74708,
-  "page": false
+  "page": false,
+  "superficie": 13.9,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "la-tour-de-salvagny",
@@ -2586,7 +3112,10 @@
   "km": 25.7,
   "lat": 45.81019,
   "lon": 4.71245,
-  "page": false
+  "page": false,
+  "superficie": 8.4,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "fontanes",
@@ -2601,7 +3130,10 @@
   "km": 25.8,
   "lat": 45.54132,
   "lon": 4.43128,
-  "page": false
+  "page": false,
+  "superficie": 6.9,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "diemoz",
@@ -2616,7 +3148,10 @@
   "km": 25.8,
   "lat": 45.58819,
   "lon": 5.08908,
-  "page": false
+  "page": false,
+  "superficie": 13.7,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "genas",
@@ -2631,7 +3166,10 @@
   "km": 26,
   "lat": 45.72987,
   "lon": 5.01611,
-  "page": true
+  "page": true,
+  "superficie": 24,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "beauvoir-de-marc",
@@ -2646,7 +3184,10 @@
   "km": 26,
   "lat": 45.51959,
   "lon": 5.07999,
-  "page": false
+  "page": false,
+  "superficie": 11.3,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "saint-laurent-de-mure",
@@ -2661,7 +3202,10 @@
   "km": 26.1,
   "lat": 45.68367,
   "lon": 5.06095,
-  "page": false
+  "page": false,
+  "superficie": 18.7,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "sourcieux-les-mines",
@@ -2676,7 +3220,10 @@
   "km": 26.1,
   "lat": 45.79824,
   "lon": 4.6308,
-  "page": false
+  "page": false,
+  "superficie": 9.9,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "vaulx-en-velin",
@@ -2691,7 +3238,10 @@
   "km": 26.2,
   "lat": 45.78596,
   "lon": 4.92664,
-  "page": true
+  "page": true,
+  "superficie": 20.9,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "sainte-foy-l-argentiere",
@@ -2706,7 +3256,10 @@
   "km": 26.2,
   "lat": 45.70495,
   "lon": 4.47153,
-  "page": false
+  "page": false,
+  "superficie": 1.6,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "saint-didier-au-mont-d-or",
@@ -2721,7 +3274,10 @@
   "km": 26.2,
   "lat": 45.81494,
   "lon": 4.79799,
-  "page": false
+  "page": false,
+  "superficie": 8.3,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "brussieu",
@@ -2736,7 +3292,10 @@
   "km": 26.3,
   "lat": 45.74724,
   "lon": 4.51773,
-  "page": false
+  "page": false,
+  "superficie": 6.8,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "decines-charpieu",
@@ -2751,7 +3310,10 @@
   "km": 26.4,
   "lat": 45.77197,
   "lon": 4.96156,
-  "page": true
+  "page": true,
+  "superficie": 16.9,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "grenay",
@@ -2766,7 +3328,10 @@
   "km": 26.4,
   "lat": 45.66192,
   "lon": 5.07697,
-  "page": false
+  "page": false,
+  "superficie": 6.8,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "lentilly",
@@ -2781,7 +3346,10 @@
   "km": 26.6,
   "lat": 45.8125,
   "lon": 4.67043,
-  "page": false
+  "page": false,
+  "superficie": 18.5,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "sorbiers",
@@ -2796,7 +3364,10 @@
   "km": 26.6,
   "lat": 45.49943,
   "lon": 4.43746,
-  "page": false
+  "page": false,
+  "superficie": 12,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "la-valla-en-gier",
@@ -2811,7 +3382,10 @@
   "km": 26.7,
   "lat": 45.40535,
   "lon": 4.52476,
-  "page": false
+  "page": false,
+  "superficie": 34.6,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "salaise-sur-sanne",
@@ -2826,7 +3400,10 @@
   "km": 26.7,
   "lat": 45.34423,
   "lon": 4.80898,
-  "page": false
+  "page": false,
+  "superficie": 16.1,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "saint-cyr-au-mont-d-or",
@@ -2841,7 +3418,10 @@
   "km": 26.9,
   "lat": 45.81918,
   "lon": 4.8183,
-  "page": false
+  "page": false,
+  "superficie": 7.2,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "la-gimond",
@@ -2856,7 +3436,10 @@
   "km": 26.9,
   "lat": 45.55565,
   "lon": 4.41446,
-  "page": false
+  "page": false,
+  "superficie": 3.4,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "bessenay",
@@ -2871,7 +3454,10 @@
   "km": 27,
   "lat": 45.77424,
   "lon": 4.547,
-  "page": false
+  "page": false,
+  "superficie": 13.9,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "meyssiez",
@@ -2886,7 +3472,10 @@
   "km": 27.1,
   "lat": 45.46245,
   "lon": 5.06177,
-  "page": false
+  "page": false,
+  "superficie": 13.8,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "bellegarde-poussieu",
@@ -2901,7 +3490,10 @@
   "km": 27.2,
   "lat": 45.3777,
   "lon": 4.95091,
-  "page": false
+  "page": false,
+  "superficie": 16.8,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "chevrieres",
@@ -2916,7 +3508,10 @@
   "km": 27.3,
   "lat": 45.59064,
   "lon": 4.40812,
-  "page": false
+  "page": false,
+  "superficie": 14.6,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "souzy",
@@ -2931,7 +3526,10 @@
   "km": 27.5,
   "lat": 45.70398,
   "lon": 4.4511,
-  "page": false
+  "page": false,
+  "superficie": 5,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "collonges-au-mont-d-or",
@@ -2946,7 +3544,10 @@
   "km": 27.6,
   "lat": 45.822,
   "lon": 4.84265,
-  "page": false
+  "page": false,
+  "superficie": 3.8,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "saint-appolinard",
@@ -2961,7 +3562,10 @@
   "km": 27.6,
   "lat": 45.34577,
   "lon": 4.64708,
-  "page": false
+  "page": false,
+  "superficie": 9.8,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "anjou",
@@ -2976,7 +3580,10 @@
   "km": 27.6,
   "lat": 45.3491,
   "lon": 4.88287,
-  "page": false
+  "page": false,
+  "superficie": 5,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "grezieu-le-marche",
@@ -2991,7 +3598,10 @@
   "km": 27.7,
   "lat": 45.6622,
   "lon": 4.42084,
-  "page": false
+  "page": false,
+  "superficie": 11.4,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "moissieu-sur-dolon",
@@ -3006,7 +3616,10 @@
   "km": 27.7,
   "lat": 45.39087,
   "lon": 4.98649,
-  "page": false
+  "page": false,
+  "superficie": 14.5,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "limonest",
@@ -3021,7 +3634,10 @@
   "km": 27.8,
   "lat": 45.83095,
   "lon": 4.77124,
-  "page": false
+  "page": false,
+  "superficie": 9.1,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "saint-jean-bonnefonds",
@@ -3036,7 +3652,10 @@
   "km": 27.8,
   "lat": 45.45691,
   "lon": 4.44873,
-  "page": false
+  "page": false,
+  "superficie": 11.7,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "bonnefamille",
@@ -3051,7 +3670,10 @@
   "km": 27.8,
   "lat": 45.60108,
   "lon": 5.1141,
-  "page": false
+  "page": false,
+  "superficie": 9.5,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "sonnay",
@@ -3066,7 +3688,10 @@
   "km": 27.9,
   "lat": 45.35662,
   "lon": 4.91626,
-  "page": false
+  "page": false,
+  "superficie": 14,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "saint-quentin-fallavier",
@@ -3081,7 +3706,10 @@
   "km": 28,
   "lat": 45.63971,
   "lon": 5.10841,
-  "page": false
+  "page": false,
+  "superficie": 23.4,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "royas",
@@ -3096,7 +3724,10 @@
   "km": 28,
   "lat": 45.50513,
   "lon": 5.10141,
-  "page": false
+  "page": false,
+  "superficie": 5.4,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "charantonnay",
@@ -3111,7 +3742,10 @@
   "km": 28.2,
   "lat": 45.53851,
   "lon": 5.11581,
-  "page": false
+  "page": false,
+  "superficie": 11,
+  "deleguees": [],
+  "direction": "à l'est"
  },
  {
   "slug": "colombier",
@@ -3126,7 +3760,10 @@
   "km": 28.4,
   "lat": 45.35368,
   "lon": 4.59398,
-  "page": false
+  "page": false,
+  "superficie": 17.8,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "agnin",
@@ -3141,7 +3778,10 @@
   "km": 28.4,
   "lat": 45.33624,
   "lon": 4.86014,
-  "page": false
+  "page": false,
+  "superficie": 7.9,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "fontaines-sur-saone",
@@ -3156,7 +3796,10 @@
   "km": 28.5,
   "lat": 45.82842,
   "lon": 4.85637,
-  "page": false
+  "page": false,
+  "superficie": 2.4,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "sain-bel",
@@ -3171,7 +3814,10 @@
   "km": 28.5,
   "lat": 45.8118,
   "lon": 4.5985,
-  "page": false
+  "page": false,
+  "superficie": 3.8,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "dommartin",
@@ -3186,7 +3832,10 @@
   "km": 28.5,
   "lat": 45.83555,
   "lon": 4.71496,
-  "page": false
+  "page": false,
+  "superficie": 7.2,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "la-talaudiere",
@@ -3201,7 +3850,10 @@
   "km": 28.5,
   "lat": 45.47856,
   "lon": 4.42355,
-  "page": false
+  "page": false,
+  "superficie": 7.6,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "saint-laurent-de-chamousset",
@@ -3216,7 +3868,10 @@
   "km": 28.7,
   "lat": 45.73781,
   "lon": 4.46466,
-  "page": false
+  "page": false,
+  "superficie": 17.2,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "rillieux-la-pape",
@@ -3231,7 +3886,10 @@
   "km": 28.7,
   "lat": 45.82046,
   "lon": 4.89891,
-  "page": true
+  "page": true,
+  "superficie": 14.5,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "saint-romain-au-mont-d-or",
@@ -3246,7 +3904,10 @@
   "km": 28.7,
   "lat": 45.83556,
   "lon": 4.82021,
-  "page": false
+  "page": false,
+  "superficie": 2.6,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "sathonay-camp",
@@ -3261,7 +3922,10 @@
   "km": 28.7,
   "lat": 45.82586,
   "lon": 4.87481,
-  "page": false
+  "page": false,
+  "superficie": 1.9,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "primarette",
@@ -3276,7 +3940,10 @@
   "km": 28.8,
   "lat": 45.40807,
   "lon": 5.03368,
-  "page": false
+  "page": false,
+  "superficie": 21.9,
+  "deleguees": [],
+  "direction": "au sud-est"
  },
  {
   "slug": "brullioles",
@@ -3291,7 +3958,10 @@
   "km": 28.9,
   "lat": 45.76335,
   "lon": 4.49268,
-  "page": false
+  "page": false,
+  "superficie": 12.5,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "bibost",
@@ -3306,7 +3976,10 @@
   "km": 29,
   "lat": 45.79666,
   "lon": 4.54877,
-  "page": false
+  "page": false,
+  "superficie": 5.3,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "eveux",
@@ -3321,7 +3994,10 @@
   "km": 29,
   "lat": 45.82453,
   "lon": 4.62202,
-  "page": false
+  "page": false,
+  "superficie": 3.4,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "graix",
@@ -3336,7 +4012,10 @@
   "km": 29,
   "lat": 45.36055,
   "lon": 4.56058,
-  "page": false
+  "page": false,
+  "superficie": 8.6,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "sablons",
@@ -3351,7 +4030,10 @@
   "km": 29,
   "lat": 45.32156,
   "lon": 4.78467,
-  "page": false
+  "page": false,
+  "superficie": 10.1,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "meyzieu",
@@ -3366,7 +4048,10 @@
   "km": 29.1,
   "lat": 45.77712,
   "lon": 5.00623,
-  "page": true
+  "page": true,
+  "superficie": 23.4,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "les-halles",
@@ -3381,7 +4066,10 @@
   "km": 29.3,
   "lat": 45.71595,
   "lon": 4.43494,
-  "page": false
+  "page": false,
+  "superficie": 3.1,
+  "deleguees": [],
+  "direction": "au nord-ouest"
  },
  {
   "slug": "aveizieux",
@@ -3396,7 +4084,10 @@
   "km": 29.6,
   "lat": 45.56909,
   "lon": 4.37894,
-  "page": false
+  "page": false,
+  "superficie": 9.1,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "neyron",
@@ -3411,7 +4102,10 @@
   "km": 29.6,
   "lat": 45.81868,
   "lon": 4.93089,
-  "page": false
+  "page": false,
+  "superficie": 5.3,
+  "deleguees": [],
+  "direction": "au nord-est"
  },
  {
   "slug": "rochetaillee-sur-saone",
@@ -3426,7 +4120,10 @@
   "km": 29.8,
   "lat": 45.84366,
   "lon": 4.83876,
-  "page": false
+  "page": false,
+  "superficie": 1.3,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "le-bessat",
@@ -3441,7 +4138,10 @@
   "km": 29.8,
   "lat": 45.3744,
   "lon": 4.51515,
-  "page": false
+  "page": false,
+  "superficie": 10.1,
+  "deleguees": [],
+  "direction": "au sud-ouest"
  },
  {
   "slug": "fleurieux-sur-l-arbresle",
@@ -3456,7 +4156,10 @@
   "km": 29.9,
   "lat": 45.83946,
   "lon": 4.65232,
-  "page": false
+  "page": false,
+  "superficie": 9.5,
+  "deleguees": [],
+  "direction": "au nord"
  },
  {
   "slug": "saint-heand",
@@ -3471,7 +4174,10 @@
   "km": 29.9,
   "lat": 45.53082,
   "lon": 4.38125,
-  "page": false
+  "page": false,
+  "superficie": 30.8,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "la-tour-en-jarez",
@@ -3486,7 +4192,10 @@
   "km": 29.9,
   "lat": 45.48859,
   "lon": 4.39796,
-  "page": false
+  "page": false,
+  "superficie": 5.1,
+  "deleguees": [],
+  "direction": "à l'ouest"
  },
  {
   "slug": "chanas",
@@ -3501,7 +4210,10 @@
   "km": 29.9,
   "lat": 45.31755,
   "lon": 4.83138,
-  "page": false
+  "page": false,
+  "superficie": 11.5,
+  "deleguees": [],
+  "direction": "au sud"
  },
  {
   "slug": "meys",
@@ -3516,6 +4228,9 @@
   "km": 30,
   "lat": 45.68203,
   "lon": 4.40043,
-  "page": false
+  "page": false,
+  "superficie": 14.6,
+  "deleguees": [],
+  "direction": "à l'ouest"
  }
 ]
