@@ -1,1 +1,142 @@
-{}
+{
+ "accueil": {
+  "fichier": "accueil.jpg",
+  "alt": "Tableau électrique Hager en cours de câblage, disjoncteurs alignés sur rail",
+  "auteur": "Dmitry G",
+  "source": "https://commons.wikimedia.org/wiki/File:Fuse_box_hager.JPG",
+  "licence": "CC BY-SA 3.0"
+ },
+ "services/depannage-electrique": {
+  "fichier": "depannage-electrique.jpg",
+  "alt": "Multimètre numérique et cordons de mesure dans leur étui",
+  "auteur": "Retired electrician",
+  "source": "https://commons.wikimedia.org/wiki/File:Aneng_AN870_multimeter_01.jpg",
+  "licence": "CC0"
+ },
+ "services/tableau-electrique": {
+  "fichier": "tableau-electrique.jpg",
+  "alt": "Tableau électrique récemment câblé avec ses rangées de disjoncteurs",
+  "auteur": "Dmitry G",
+  "source": "https://commons.wikimedia.org/wiki/File:Linnam%C3%A4e_37_-_fuse_box_is_wired.JPG",
+  "licence": "CC BY-SA 3.0"
+ },
+ "services/mise-aux-normes-electrique": {
+  "fichier": "mise-aux-normes-electrique.jpg",
+  "alt": "Interrupteur différentiel avec son bouton de test",
+  "auteur": "Raimond Spekking",
+  "source": "https://commons.wikimedia.org/wiki/File:Moeller_Xpole_PXF-40-4-003-A-2288.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "services/renovation-electrique": {
+  "fichier": "renovation-electrique.jpg",
+  "alt": "Électricien qui raccorde les fils d'une prise murale",
+  "auteur": "Santeri Viinamäki",
+  "source": "https://commons.wikimedia.org/wiki/File:Electrician_installing_socket.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "services/installation-electrique": {
+  "fichier": "installation-electrique.jpg",
+  "alt": "Arrière d'un module de prise avec ses bornes neutre et phase",
+  "auteur": "Retired electrician",
+  "source": "https://commons.wikimedia.org/wiki/File:Small-outline_Schuko_socket_module_05(DXO).jpg",
+  "licence": "CC0"
+ },
+ "services/eclairage": {
+  "fichier": "eclairage.jpg",
+  "alt": "Suspension lumineuse dans un salon",
+  "auteur": "Aaaatu",
+  "source": "https://commons.wikimedia.org/wiki/File:Studio_apartment_in_Finland.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "services/chauffage-electrique": {
+  "fichier": "chauffage-electrique.jpg",
+  "alt": "Radiateur électrique fixé au mur au-dessus d'un parquet",
+  "auteur": "Santeri Viinamäki",
+  "source": "https://commons.wikimedia.org/wiki/File:White_electric_radiator.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "services/vmc": {
+  "fichier": "vmc.jpg",
+  "alt": "Bouche de ventilation au plafond",
+  "auteur": "Tony Webster",
+  "source": "https://commons.wikimedia.org/wiki/File:Drop_Ceiling_HVAC_Air_Vent_and_Office_Lighting_(53076027164).jpg",
+  "licence": "CC BY-SA 2.0"
+ },
+ "services/interphone-visiophone": {
+  "fichier": "interphone-visiophone.jpg",
+  "alt": "Platine de visiophone avec clavier à code sur un mur de briques",
+  "auteur": "Georg Pik",
+  "source": "https://commons.wikimedia.org/wiki/File:Video_door-phone_Akuvox.jpg",
+  "licence": "CC0"
+ },
+ "services/volets-roulants": {
+  "fichier": "volets-roulants.jpg",
+  "alt": "Fenêtres équipées de volets roulants à demi baissés",
+  "auteur": "Im Fokus",
+  "source": "https://commons.wikimedia.org/wiki/File:Wuppertal,_Kaiserstr._125,_Fensterpaar_im_1._OG.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "services/copropriete-tertiaire": {
+  "fichier": "copropriete-tertiaire.jpg",
+  "alt": "Cage d'escalier d'un immeuble ancien avec son ascenseur",
+  "auteur": "Wompity",
+  "source": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Scheult_cage_d%E2%80%99escalier_et_ascenseur.JPG",
+  "licence": "CC BY-SA 4.0"
+ },
+ "services/travaux-apres-diagnostic": {
+  "fichier": "travaux-apres-diagnostic.jpg",
+  "alt": "Multimètre à aiguille et ses pointes de touche",
+  "auteur": "Islander61",
+  "source": "https://commons.wikimedia.org/wiki/File:Analog_multimeter_HARTIG_%26_HELLING_VM-10K.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "blog/disjoncteur-qui-saute": {
+  "fichier": "article-disjoncteur-qui-saute.jpg",
+  "alt": "Rangée de disjoncteurs repérés dans un tableau électrique",
+  "auteur": "Pittigrilli",
+  "source": "https://commons.wikimedia.org/wiki/File:One_row_of_ABB_230V_16A_fuses_in_fuse_box_in_German_shop,_2024.jpg",
+  "licence": "CC0"
+ },
+ "blog/differentiel-qui-saute-pluie-nuit": {
+  "fichier": "article-differentiel-qui-saute-pluie-nuit.jpg",
+  "alt": "Interrupteur différentiel dans un tableau électrique",
+  "auteur": "Santeri Viinamäki",
+  "source": "https://commons.wikimedia.org/wiki/File:GE_Industrial_Solutions_Residual-current_device.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "blog/prise-qui-chauffe": {
+  "fichier": "article-prise-qui-chauffe.jpg",
+  "alt": "Tournevis testeur allumé dans une prise électrique",
+  "auteur": "Simon A. Eugster",
+  "source": "https://commons.wikimedia.org/wiki/File:Voltage_test_light_active.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "blog/panne-courant-une-piece": {
+  "fichier": "article-panne-courant-une-piece.jpg",
+  "alt": "Multimètre numérique rouge et ses cordons",
+  "auteur": "Jacek Halicki",
+  "source": "https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg",
+  "licence": "CC BY-SA 4.0"
+ },
+ "blog/coupure-de-courant-que-faire": {
+  "fichier": "article-coupure-de-courant-que-faire.jpg",
+  "alt": "Coffret électrique de chantier avec prises et arrêt d'urgence",
+  "auteur": "Benoît Prieur",
+  "source": "https://commons.wikimedia.org/wiki/File:Cablage_%C3%A9lectrique_temporaire_durant_le_marathon_du_Beujolais.JPG",
+  "licence": "CC0"
+ },
+ "blog/quand-changer-tableau-electrique": {
+  "fichier": "article-quand-changer-tableau-electrique.jpg",
+  "alt": "Ancien tableau électrique dans un placard",
+  "auteur": "Сизарев Евгений",
+  "source": "https://commons.wikimedia.org/wiki/File:Fuse_box_with_overlimited_circuit_breakers.JPG",
+  "licence": "CC BY-SA 3.0"
+ },
+ "blog/norme-nf-c-15-100-renovation": {
+  "fichier": "article-norme-nf-c-15-100-renovation.jpg",
+  "alt": "Petit tableau électrique avec disjoncteurs et différentiel",
+  "auteur": "Dmitry G",
+  "source": "https://commons.wikimedia.org/wiki/File:Fuse_box_for_ice_cream_trailer.JPG",
+  "licence": "CC BY-SA 3.0"
+ }
+}

@@ -24,5 +24,12 @@ export const photosServices = Object.entries(photos)
   .filter(([cle]) => cle.startsWith('services/'))
   .map(([, p]) => p);
 
+// Lien vers le texte de la licence Creative Commons, quand il y en a un
+export function lienLicence(licence: string) {
+  if (/^CC0/i.test(licence)) return 'https://creativecommons.org/publicdomain/zero/1.0/deed.fr';
+  const m = licence.match(/^CC (BY(?:-SA)?) ([0-9.]+)/i);
+  return m ? `https://creativecommons.org/licenses/${m[1].toLowerCase()}/${m[2]}/deed.fr` : undefined;
+}
+
 // Une ligne par fichier, pour les crédits des mentions légales
 export const credits = [...new Map(Object.values(photos).map((p) => [p.fichier, p])).values()];

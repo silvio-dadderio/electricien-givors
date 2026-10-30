@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { SITE } from '../config';
-import { credits } from '../lib/photos';
+import { credits, lienLicence } from '../lib/photos';
 const L = SITE.legal;
 const val = (x: string) => x || 'à compléter';
 ---
@@ -36,7 +36,15 @@ const val = (x: string) => x || 'à compléter';
           <h2>Crédits photos</h2>
           <p>Photos d'illustration libres de droit. Elles ne représentent pas des chantiers réalisés par nos soins.</p>
           <ul>
-            {credits.map((p) => <li><a href={p.source} rel="nofollow noopener">{p.auteur}</a> ({p.licence})</li>)}
+            {credits.map((p) => {
+              const lien = lienLicence(p.licence);
+              return (
+                <li>
+                  {p.alt} : <a href={p.source} rel="nofollow noopener">{p.auteur}</a>, {new URL(p.source).hostname === 'commons.wikimedia.org' ? 'Wikimedia Commons' : new URL(p.source).hostname},{' '}
+                  {lien ? <a href={lien} rel="nofollow noopener">{p.licence}</a> : p.licence}
+                </li>
+              );
+            })}
           </ul>
         </>
       )}
