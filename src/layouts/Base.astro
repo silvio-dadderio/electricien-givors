@@ -16,6 +16,8 @@ interface Props {
 const { title, description, schema = [], noindex = false, brandSuffix = true } = Astro.props;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const avecMarque = `${title} | ${SITE.brand}`;
+// Adresse de test en .netlify.app : invisible pour Google, sinon doublon du vrai domaine
+const apercu = (process.env.URL ?? '').includes('.netlify.app');
 const fullTitle = !brandSuffix || title.includes(SITE.brand) || avecMarque.length > 60 ? title : avecMarque;
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
@@ -49,7 +51,7 @@ const jsonld = [entreprise, ...schema];
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    {noindex && <meta name="robots" content="noindex" />}
+    {(noindex || apercu) && <meta name="robots" content="noindex" />}
     <meta name="theme-color" content="#0f1b2d" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
